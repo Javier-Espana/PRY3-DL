@@ -1,0 +1,10 @@
+.env
+.venv/
+__pycache__/
+.pytest_cache/
+# Documentos reales con datos personales: no se suben. Solo sintéticos o anonimizados.
+data/docs/*
+!data/docs/.gitkeep
+!data/docs/README.md
+results/*.json
+!results/.gitkeep

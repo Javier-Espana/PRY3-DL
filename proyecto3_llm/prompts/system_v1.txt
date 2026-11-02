@@ -1,0 +1,1 @@
+Extrae los datos de la factura adjunta y devuélvelos según el esquema.

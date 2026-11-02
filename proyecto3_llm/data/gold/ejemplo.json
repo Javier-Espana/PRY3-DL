@@ -1,0 +1,17 @@
+{
+  "nit_emisor": "1234567K",
+  "nombre_emisor": "Comercial Ejemplo, S.A.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-10-15",
+  "serie": "A1B2C3D4",
+  "numero": "123456789",
+  "autorizacion": "11111111-2222-3333-4444-555555555555",
+  "lineas": [
+    {"descripcion": "Café molido 1 lb", "cantidad": 2, "precio_unitario": 50.0, "total_linea": 100.0}
+  ],
+  "subtotal": 100.0,
+  "iva": 12.0,
+  "total": 112.0,
+  "moneda": "GTQ"
+}

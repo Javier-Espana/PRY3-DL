@@ -17,9 +17,12 @@ import re
 import statistics
 from pathlib import Path
 
+from dotenv import load_dotenv
+
 from .schema import CAMPOS_ESCALARES, Factura
 
 ROOT = Path(__file__).resolve().parent.parent
+load_dotenv(ROOT / ".env")
 DOC_EXT = {".pdf", ".png", ".jpg", ".jpeg", ".webp"}
 
 

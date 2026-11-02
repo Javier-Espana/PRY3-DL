@@ -1,8 +1,8 @@
+.env
 .venv/
 __pycache__/
 *.py[cod]
 .pytest_cache/
-.env
 .streamlit/secrets.toml
 *.aux
 *.log
@@ -10,5 +10,13 @@ __pycache__/
 *.toc
 *.fls
 *.fdb_latexmk
-data/raw/
-models/
+
+# Documentos reales con datos personales: no se suben. Solo sintéticos (sint_*) o anonimizados.
+data/docs/*
+!data/docs/.gitkeep
+!data/docs/README.md
+!data/docs/sint_*
+
+# Resultados de corridas locales (se regeneran con src/evaluate.py)
+results/*.json
+!results/.gitkeep

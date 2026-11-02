@@ -4,8 +4,6 @@ Sube una factura (PDF o imagen) y obtén un JSON/CSV con sus datos. Un LLM extra
 campos, validadores deterministas revisan la consistencia (IVA, sumas, NIT, fecha) y los
 campos dudosos se marcan para revisión humana.
 
-> Este proyecto es independiente de AlertaP (Proyecto Final), que vive en `../src`.
-
 ## Pipeline
 
 ```
@@ -18,7 +16,6 @@ PDF/imagen -> bloque de documento -> Claude (salida estructurada, esquema Pydant
 ## Instalación
 
 ```bash
-cd proyecto3_llm
 python -m venv .venv
 .venv/Scripts/pip install -r requirements.txt   # Windows (en Linux/Mac: .venv/bin/pip)
 cp .env.example .env                            # y pon tu ANTHROPIC_API_KEY

@@ -1,6 +1,6 @@
 """Genera facturas SINTÉTICAS (datos inventados) con su gold JSON.
 
-Uso (desde proyecto3_llm/):
+Uso (desde la raíz del repo):
     python scripts/make_synthetic.py --n 45 --seed 2026
 
 Salida: data/docs/sint_XXX.pdf|png y data/gold/sint_XXX.json

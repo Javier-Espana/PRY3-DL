@@ -1,6 +1,6 @@
 """App Streamlit: sube una factura (PDF/imagen) y obtén JSON/CSV revisable.
 
-Ejecutar desde proyecto3_llm/:  streamlit run src/app.py
+Ejecutar desde la raíz del repo:  streamlit run src/app.py
 """
 
 from __future__ import annotations

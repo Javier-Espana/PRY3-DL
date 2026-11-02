@@ -1,6 +1,6 @@
 """Evaluación contra el conjunto de referencia (gold).
 
-Uso (desde proyecto3_llm/):
+Uso (desde la raíz del repo):
     python -m src.evaluate --system regex
     python -m src.evaluate --system llm --model claude-haiku-5-5 --prompt v1
     python -m src.evaluate --system llm --model claude-sonnet-5-5 --prompt v2 --retries 1

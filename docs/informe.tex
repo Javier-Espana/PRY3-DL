@@ -2,6 +2,7 @@
 
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage[spanish,es-nodecimaldot]{babel}
 \usepackage[a4paper,margin=2.2cm]{geometry}
 \usepackage{booktabs}
@@ -58,25 +59,25 @@ El flujo del producto es:
   decision/.style={draw, diamond, align=center, aspect=2, inner sep=1pt},
   arrow/.style={-{Latex[length=2mm]}, thick}
 ]
-  \node[box] (input) {PDF o imagen};
-  \node[box, right=of input] (multi) {Entrada\\multimodal};
-  \node[decision, right=of multi] (model) {Modelo};
-  \node[box, above right=of model] (openai) {OpenAI\\Responses};
-  \node[box, below right=of model] (anthropic) {Anthropic\\Messages};
-  \node[box, right=25mm of model] (schema) {Factura\\Pydantic};
-  \node[box, right=of schema] (valid) {Validadores\\deterministas};
-  \node[box, above right=of valid] (ui) {Streamlit};
-  \node[box, below right=of valid] (download) {JSON / CSV};
+  \node[box] (input) at (0,0) {PDF o imagen};
+  \node[box] (multi) at (38mm,0) {Entrada\\multimodal};
+  \node[decision] (model) at (76mm,0) {Modelo};
+  \node[box] (openai) at (118mm,8mm) {OpenAI\\Responses};
+  \node[box] (anthropic) at (118mm,-8mm) {Anthropic\\Messages};
+  \node[box] (schema) at (118mm,-32mm) {Factura\\Pydantic};
+  \node[box] (valid) at (76mm,-32mm) {Validadores\\deterministas};
+  \node[box] (ui) at (38mm,-32mm) {Streamlit};
+  \node[box] (download) at (76mm,-50mm) {JSON / CSV};
   \draw[arrow] (input) -- (multi);
   \draw[arrow] (multi) -- (model);
   \draw[arrow] (model) -- (openai);
   \draw[arrow] (model) -- (anthropic);
-  \draw[arrow] (openai) -- (schema);
-  \draw[arrow] (anthropic) -- (schema);
+  \draw[arrow] (openai.east) -- ++(6mm,0) |- (schema.east);
+  \draw[arrow] (anthropic.south) -- (schema.north);
   \draw[arrow] (schema) -- (valid);
   \draw[arrow] (valid) -- (ui);
   \draw[arrow] (valid) -- (download);
-  \draw[arrow] (valid.north) to[bend left=30] node[above, font=\scriptsize]{máximo 1 reintento} (model.north);
+  \draw[arrow] (valid.north) -- node[right, font=\scriptsize, align=left]{m\'aximo 1\\reintento} (model.south);
 \end{tikzpicture}
 \caption{Arquitectura del extractor.}
 \end{figure}

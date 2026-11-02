@@ -2,8 +2,8 @@
 
 Uso (desde la raíz del repo):
     python -m src.evaluate --system regex
-    python -m src.evaluate --system llm --model claude-haiku-5-5 --prompt v1
-    python -m src.evaluate --system llm --model claude-sonnet-5-5 --prompt v2 --retries 1
+    python -m src.evaluate --system llm --model gpt-4o-mini --prompt v1
+    python -m src.evaluate --system llm --model gpt-4o-mini --prompt v2 --retries 1
 
 Convención: data/docs/<nombre>.pdf|png|jpg  <->  data/gold/<nombre>.json (mismo esquema que Factura).
 Escribe results/<run>.json con métricas y el detalle por documento.
@@ -105,14 +105,17 @@ def evaluar(system: str, model: str, prompt: str, retries: int, docs: Path, gold
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--system", choices=["regex", "llm"], required=True)
-    ap.add_argument("--model", default="claude-opus-5-5")
+    ap.add_argument("--model", default="gpt-4o-mini")
     ap.add_argument("--prompt", default="v2")
-    ap.add_argument("--retries", type=int, default=1)
+    ap.add_argument("--retries", type=int, choices=(0, 1), default=1)
     ap.add_argument("--docs", type=Path, default=ROOT / "data" / "docs")
     ap.add_argument("--gold", type=Path, default=ROOT / "data" / "gold")
+    ap.add_argument("--run-name", help="sufijo para distinguir conjuntos de datos")
     a = ap.parse_args()
     salida = evaluar(a.system, a.model, a.prompt, a.retries, a.docs, a.gold)
     nombre = "regex" if a.system == "regex" else f"{a.model}_{a.prompt}_r{a.retries}"
+    if a.run_name:
+        nombre += f"_{a.run_name}"
     (ROOT / "results").mkdir(exist_ok=True)
     (ROOT / "results" / f"{nombre}.json").write_text(json.dumps(salida, indent=2, ensure_ascii=False), encoding="utf-8")
     print(json.dumps(salida["metricas"], indent=2, ensure_ascii=False))

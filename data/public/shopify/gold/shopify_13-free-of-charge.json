@@ -1,0 +1,22 @@
+{
+  "nit_emisor": "100123456700003",
+  "nombre_emisor": "Fictional Gulf Foods LLC",
+  "nit_receptor": null,
+  "nombre_receptor": "Example Grocery Trading LLC, Dubai",
+  "fecha": "2026-08-13",
+  "serie": null,
+  "numero": "INV-2026-013",
+  "autorizacion": null,
+  "lineas": [
+    {
+      "descripcion": "Tomato Paste 400g",
+      "cantidad": 10,
+      "precio_unitario": 9.5,
+      "total_linea": 95
+    }
+  ],
+  "subtotal": 95,
+  "iva": 4.75,
+  "total": 99.75,
+  "moneda": "AED"
+}

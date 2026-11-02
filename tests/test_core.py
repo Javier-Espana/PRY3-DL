@@ -65,18 +65,38 @@ def test_reintento_cuando_hay_problemas(tmp_path):
     respuestas = [malo, _ok()]
     llamadas = []
 
+    class FakeResponses:
+        def parse(self, **kwargs):
+            llamadas.append(kwargs)
+            return SimpleNamespace(
+                output_parsed=respuestas[len(llamadas) - 1], status="completed",
+                usage=SimpleNamespace(input_tokens=1000, output_tokens=200),
+            )
+
+    r = extraer(pdf, modelo="gpt-4o-mini", max_reintentos=1, client=SimpleNamespace(responses=FakeResponses()))
+    assert r.intentos == 2 and r.problemas == [] and r.factura.total == 112.0
+    assert r.tokens_in == 2000 and r.costo_usd > 0
+    assert llamadas[0]["text_format"] is Factura
+    assert llamadas[0]["max_output_tokens"] == 2000
+
+
+def test_extrae_con_anthropic_y_mismo_limite(tmp_path):
+    pdf = tmp_path / "x.pdf"
+    pdf.write_bytes(b"%PDF-1.4 fake")
+    llamadas = []
+
     class FakeMessages:
         def parse(self, **kwargs):
             llamadas.append(kwargs)
             return SimpleNamespace(
-                parsed_output=respuestas[len(llamadas) - 1], stop_reason="end_turn",
-                usage=SimpleNamespace(input_tokens=1000, output_tokens=200),
+                parsed_output=_ok(), stop_reason="end_turn",
+                usage=SimpleNamespace(input_tokens=100, output_tokens=80),
             )
 
-    r = extraer(pdf, modelo="claude-haiku-5-5", max_reintentos=1, client=SimpleNamespace(messages=FakeMessages()))
-    assert r.intentos == 2 and r.problemas == [] and r.factura.total == 112.0
-    assert r.tokens_in == 2000 and r.costo_usd > 0
-    assert "temperature" not in llamadas[0]
+    r = extraer(pdf, modelo="claude-haiku-5-5", max_reintentos=0,
+                client=SimpleNamespace(messages=FakeMessages()))
+    assert r.error is None and r.factura.total == 112.0
+    assert llamadas[0]["max_tokens"] == 2000
 
 
 def test_formato_no_soportado_no_lanza(tmp_path):

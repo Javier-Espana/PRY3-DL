@@ -1,0 +1,28 @@
+{
+  "nit_emisor": null,
+  "nombre_emisor": "Fictional Kuwait Dry Goods WLL",
+  "nit_receptor": null,
+  "nombre_receptor": "Example Kuwait Grocery Co., Kuwait City",
+  "fecha": "2026-08-07",
+  "serie": null,
+  "numero": "INV-2026-007",
+  "autorizacion": null,
+  "lineas": [
+    {
+      "descripcion": "Basmati Rice 5kg",
+      "cantidad": 8,
+      "precio_unitario": 4.125,
+      "total_linea": 33
+    },
+    {
+      "descripcion": "Cooking Oil 1.8L",
+      "cantidad": 6,
+      "precio_unitario": 2.25,
+      "total_linea": 13.5
+    }
+  ],
+  "subtotal": 46.5,
+  "iva": 0,
+  "total": 46.5,
+  "moneda": "KWD"
+}

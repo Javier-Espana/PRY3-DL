@@ -1,0 +1,22 @@
+{
+  "nit_emisor": "310123456700003",
+  "nombre_emisor": "Fictional Najd Trading Co. / شركة نجد التجارية التجريبية",
+  "nit_receptor": null,
+  "nombre_receptor": "Example Riyadh Grocery LLC / شركة بقالة الرياض النموذجية",
+  "fecha": "2026-08-06",
+  "serie": null,
+  "numero": "INV-2026-006",
+  "autorizacion": null,
+  "lineas": [
+    {
+      "descripcion": "Instant Coffee 200g",
+      "cantidad": 30,
+      "precio_unitario": 22,
+      "total_linea": 660
+    }
+  ],
+  "subtotal": 660,
+  "iva": 99,
+  "total": 759,
+  "moneda": "SAR"
+}

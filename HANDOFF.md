@@ -1,4 +1,4 @@
-# Traspaso del proyecto — Extractor de facturas FEL con Claude
+# Traspaso del proyecto — Extractor de facturas FEL con GPT
 
 Fecha del traspaso: 2 de noviembre de 2026. Este documento explica el estado real del trabajo y qué sigue.
 
@@ -21,29 +21,31 @@ Este repo es el **Proyecto 3**. Lo que pide su rúbrica: producto funcional usab
 
 ## 2. Qué hace el producto
 
-Sube una factura (PDF o imagen) → Claude extrae los campos en JSON estructurado (esquema Pydantic) → validadores deterministas revisan consistencia → si fallan, se reintenta enviando los problemas al modelo → UI Streamlit con tabla, campos marcados y descarga JSON/CSV.
+Sube una factura (PDF o imagen) → GPT extrae los campos en JSON estructurado (esquema Pydantic) → validadores deterministas revisan consistencia → si fallan, se reintenta enviando los problemas al modelo → UI Streamlit con tabla, campos marcados y descarga JSON/CSV.
 
 ```
 src/schema.py        esquema de la factura (todo opcional; null si no aparece)
-src/extractor.py     llamada a Claude (messages.parse), reintento, tokens/latencia/costo
+src/extractor.py     llamadas OpenAI Responses y Anthropic Messages (salida Pydantic), reintento, tokens/latencia/costo
 src/validators.py    IVA 12 %, sumas, dígito verificador de NIT, fecha, UUID
 src/baseline_regex.py baseline sin LLM (pdfplumber + regex)
 src/evaluate.py      evalúa contra data/gold y escribe results/<corrida>.json
 src/app.py           app Streamlit
 scripts/make_synthetic.py  genera facturas sintéticas + gold
 prompts/system_v1.txt (mínimo)  system_v2.txt (reglas, nulos, anti prompt-injection)
-docs/informe.md      esqueleto del trabajo escrito (secciones 2.1–2.9 del enunciado)
+docs/informe.md      informe final del trabajo escrito (secciones 2.1–2.9 del enunciado)
 ```
 
 ## 3. Cómo ejecutar
 
 ```bash
 python -m venv .venv
-.venv/Scripts/pip install -r requirements.txt        # Windows; en Linux/Mac: .venv/bin/pip
-cp .env.example .env                                  # y poner ANTHROPIC_API_KEY en .env
-.venv/Scripts/python -m pytest -q                     # 10 tests, no usan la API
-.venv/Scripts/streamlit run src/app.py                # app
-.venv/Scripts/python -m src.evaluate --system llm --model claude-haiku-5-5 --prompt v1 --retries 0
+.venv/bin/python -m pip install -r requirements.txt  # Windows: .venv/Scripts/python -m pip
+cp .env.example .env                                  # y poner ambas claves en .env
+.venv/bin/python -m pytest -q                         # 11 tests, no usan la API
+.venv/bin/streamlit run src/app.py                   # app
+.venv/bin/python -m src.evaluate --system llm --model gpt-4o-mini --prompt v2 --retries 1
+.venv/bin/python -m src.evaluate --system llm --model claude-sonnet-5-5 --prompt v2 --retries 0
+.venv/bin/python -m src.evaluate --system llm --model claude-haiku-5-5 --prompt v2 --retries 0
 ```
 
 En Windows, si salen errores de codificación, anteponer `PYTHONUTF8=1`.
@@ -54,29 +56,24 @@ En Windows, si salen errores de codificación, anteponer `PYTHONUTF8=1`.
 
 | Corrida | Campos OK | Docs 100 % OK | Latencia | USD/doc |
 |---|---|---|---|---|
-| Regex (v0) | 22,2 % | 0 % | — | 0 |
-| Haiku 5.5, prompt v1 | 98,8 % | 84,4 % | 4,3 s | 0,0006 |
-| Haiku 5.5, prompt v2 | 98,3 % | 82,2 % | 4,1 s | 0,0008 |
-| Haiku 5.5, prompt v2 + reintento | 98,5 % | 82,2 % | 4,1 s | 0,0008 |
-| Sonnet 5.5, prompt v1 | 99,0 % | 86,7 % | 4,0 s | 0,011 |
-| Sonnet 5.5, prompt v2 + reintento | 97,8 % | 71,1 % | 3,6 s | 0,011 |
-| Opus 5.5, prompt v1 | 98,8 % | 84,4 % | 5,7 s | 0,023 |
-| Opus 5.5, prompt v2 + reintento | 98,8 % | 84,4 % | 6,3 s | 0,026 |
+| Regex (v0, gold corregido) | 23,25 % | 0 % | — | 0 |
+| GPT-4o-mini, prompt v2, sin reintento | 90,77 % | 15,56 % | 4,923 s | 0,00147 |
+| Claude Haiku 5.5, prompt v2, sin reintento | 100 % | 100 % | 5,305 s | 0,00076 |
+| Claude Sonnet 5.5, prompt v2, sin reintento | 98,63 % | 82,22 % | 3,958 s | 0,0113 |
 
-Gasto total de estas corridas: ~$2,8 (casi todo Opus). `results/*.json` **no se sube a git** (`.gitignore`); regenerar o cambiar la regla si se quieren versionar.
+Las corridas actuales están guardadas localmente en `results/` y usan el gold corregido. `results/*.json` **no se sube a git** (`.gitignore`); se pueden regenerar con los comandos anteriores. Haiku obtuvo 83,08 % de exactitud y 6,67 % de documentos completos en las 15 fixtures públicas, a `$0,00078` por documento.
 
 ### Hallazgos
-1. **Bug en el gold sintético (hay que arreglarlo).** Los 6 documentos que fallan `subtotal` en *todas* las corridas (`sint_016, 018, 022, 025, 030, 041`) son las facturas sin IVA (pequeño contribuyente). Esas facturas no muestran subtotal, pero `make_synthetic.py` lo puso igual al total en el gold. Los modelos devuelven `null` y tienen razón.
+1. **Bug en el gold sintético (corregido).** Los 6 documentos (`sint_016, 018, 022, 025, 030, 041`) son facturas sin IVA y no muestran subtotal. `make_synthetic.py` ahora genera `subtotal: null`; los seis JSON fueron regenerados y las corridas actuales usan ese gold corregido.
 2. **El prompt v2 empeora `moneda`.** La regla "si no aparece explícito, devuelve null" deja la moneda vacía en 3–7 documentos que solo dicen "Q". El v1 infiere GTQ. Es un compromiso real (no inventar vs. inferir bien) que conviene documentar en el informe.
-3. **El modelo grande no compensa:** Haiku ≈ 98,5 % por <$0,001/factura; Opus cuesta ~30× más sin ganar exactitud. Conclusión de negocio para el informe.
-4. **El reintento con validadores no aportó** (diferencia dentro del ruido): casi no hay inconsistencias que corregir.
-5. **El conjunto sintético es demasiado fácil** (techo de rendimiento): no distingue entre modelos ni prompts; solo se ve el contraste con el regex, que además diseñamos nosotros.
+3. **Haiku fue el mejor en ambos conjuntos:** 100 % en las 45 FEL y 83,08 % en las 15 públicas; la diferencia refleja que el segundo conjunto contiene idiomas, descuentos y layouts fuera del esquema FEL.
+4. **El conjunto sintético es demasiado fácil** (techo de rendimiento): la comparación puede no distinguir modelos; hace falta añadir datos difíciles y reales anonimizados.
 
 ## 5. Pendientes, en orden de prioridad
 
-1. **Decidir y arreglar el gold:** poner `subtotal: null` en las facturas sin IVA (en `crear_caso` de `scripts/make_synthetic.py`), regenerar con la misma semilla (los documentos no cambian) y repetir las corridas (~$2,8; solo Haiku ≈ $0,06). **Declarar en el informe** que fue un error de etiquetado hallado tras ver resultados, no un ajuste a favor de un modelo.
-2. **Endurecer el conjunto** para que haya diferencias medibles: fotos muy borrosas/torcidas, layouts raros, descuentos, montos ambiguos, texto de relleno, y **10–15 facturas reales anonimizadas** etiquetadas a mano (revisión cruzada; anotar quién etiquetó). Repetir corridas.
-3. **Completar `docs/informe.md`** (marcadores **[PENDIENTE]**): usuario real validado con 1–2 personas, línea base de tiempo/error actual, criterios de éxito (fijarlos *antes* de ver nuevos resultados), diagrama de arquitectura, tabla de iteraciones, ejemplos de fallas (salen de `results/*.json` → `detalle`), conclusiones, enlace al repo. Convertir a PDF.
+1. **[x] Arreglar el gold:** las facturas sin IVA ahora tienen `subtotal: null` en `crear_caso`; se regeneraron los 45 casos con la semilla 2026. **Declararlo en el informe** como un error de etiquetado hallado tras ver resultados, no como un ajuste a favor de un modelo. Las tres corridas actuales ya fueron ejecutadas.
+2. **[parcial] Endurecer el conjunto:** se incorporaron 15 fixtures públicas sintéticas con fotos, layouts raros, descuentos, flete, duty y texto bilingüe en `data/public/shopify/`. Falta añadir **10–15 facturas reales anonimizadas**, etiquetarlas a mano con revisión cruzada y anotar quién etiquetó.
+3. **[x] Completar `docs/informe.md`:** informe final con arquitectura, datasets, métricas, costos, limitaciones, conclusiones y comandos reproducibles. La validación con usuarios externos y las capturas siguen siendo trabajo de entrega, no se inventan.
 4. **Prueba de usabilidad** con 2–3 personas ajenas al grupo (sección 2.6), con capturas de pantalla.
 5. **Video demo** de 1–3 min (.mp4) y **material visual** (póster o presentación con diagrama y métricas). Plan B para la feria: respuestas en caché por si falla la red (no implementado).
 6. **Verificar supuestos escritos de memoria**, hoy sin comprobar con datos reales:
@@ -90,7 +87,7 @@ Gasto total de estas corridas: ~$2,8 (casi todo Opus). `results/*.json` **no se 
 ## 6. Cosas a tener en cuenta
 
 - Los modelos actuales **rechazan `temperature`/`top_p`** (400); no se envían. El modelo razona siempre.
-- Las facturas se envían a la API de Anthropic: no usar datos que no puedan compartirse. Declararlo en el informe (privacidad). El prompt trata el contenido del documento como dato (mitigación de prompt injection).
+- Las facturas se envían a OpenAI o Anthropic según el modelo: no usar datos que no puedan compartirse. Declararlo en el informe (privacidad). El prompt trata el contenido del documento como dato (mitigación de prompt injection).
 - `data/docs/*` está ignorado salvo `sint_*` (sintéticos) y el README; los documentos **reales** no deben subirse.
 - El conjunto sintético y su gold salen del mismo script que diseñamos: declararlo como limitación.
 - Historial del repo: `66e8efe` contiene AlertaP si algún día hace falta (`git checkout 66e8efe -- src README.md`).

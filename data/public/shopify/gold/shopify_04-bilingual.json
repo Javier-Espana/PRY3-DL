@@ -1,0 +1,28 @@
+{
+  "nit_emisor": null,
+  "nombre_emisor": "Fictional Gulf Foods LLC / شركة الخليج الغذائية التجريبية ذ.م.م",
+  "nit_receptor": null,
+  "nombre_receptor": "Example Grocery Trading LLC / شركة البقالة النموذجية",
+  "fecha": "2026-08-04",
+  "serie": null,
+  "numero": "INV-2026-004",
+  "autorizacion": null,
+  "lineas": [
+    {
+      "descripcion": "Sparkling Water 330ml",
+      "cantidad": 24,
+      "precio_unitario": 2.5,
+      "total_linea": 60
+    },
+    {
+      "descripcion": "Medjool Dates 1kg",
+      "cantidad": 8,
+      "precio_unitario": 4.5,
+      "total_linea": 36
+    }
+  ],
+  "subtotal": 96,
+  "iva": 4.8,
+  "total": 100.8,
+  "moneda": "AED"
+}

@@ -1,0 +1,34 @@
+{
+  "nit_emisor": "100123456700003",
+  "nombre_emisor": "Fictional Gulf Foods LLC",
+  "nit_receptor": null,
+  "nombre_receptor": "Example Grocery Trading LLC, Dubai",
+  "fecha": "2026-08-10",
+  "serie": null,
+  "numero": "INV-2026-010",
+  "autorizacion": null,
+  "lineas": [
+    {
+      "descripcion": "Black Tea 100 bags",
+      "cantidad": 20,
+      "precio_unitario": 12,
+      "total_linea": 240
+    },
+    {
+      "descripcion": "Honey 500g",
+      "cantidad": 15,
+      "precio_unitario": 18,
+      "total_linea": 270
+    },
+    {
+      "descripcion": "Mixed Nuts 250g",
+      "cantidad": 10,
+      "precio_unitario": 22,
+      "total_linea": 220
+    }
+  ],
+  "subtotal": 730,
+  "iva": 32.85,
+  "total": 689.85,
+  "moneda": "AED"
+}

@@ -1,0 +1,22 @@
+{
+  "nit_emisor": null,
+  "nombre_emisor": "Fictional Atlantic Imports Inc.",
+  "nit_receptor": null,
+  "nombre_receptor": "Example Grocery Trading LLC, Dubai (AED Shopify store)",
+  "fecha": "2026-08-08",
+  "serie": null,
+  "numero": "INV-2026-008",
+  "autorizacion": null,
+  "lineas": [
+    {
+      "descripcion": "Import Snack Mix 400g",
+      "cantidad": 50,
+      "precio_unitario": 3.2,
+      "total_linea": 160
+    }
+  ],
+  "subtotal": 160,
+  "iva": 0,
+  "total": 172,
+  "moneda": "USD"
+}

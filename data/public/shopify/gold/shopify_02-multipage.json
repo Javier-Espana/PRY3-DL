@@ -1,0 +1,136 @@
+{
+  "nit_emisor": null,
+  "nombre_emisor": "Fictional Gulf Foods LLC",
+  "nit_receptor": null,
+  "nombre_receptor": "Example Grocery Trading LLC, Dubai",
+  "fecha": "2026-08-02",
+  "serie": null,
+  "numero": "INV-2026-002",
+  "autorizacion": null,
+  "lineas": [
+    {
+      "descripcion": "Ambient Grocery Item 01",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 02",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 03",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 04",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 05",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 06",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 07",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 08",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 09",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 10",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 11",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 12",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 13",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 14",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 15",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 16",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 17",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 18",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 19",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    },
+    {
+      "descripcion": "Ambient Grocery Item 20",
+      "cantidad": 2,
+      "precio_unitario": 10,
+      "total_linea": 20
+    }
+  ],
+  "subtotal": 400,
+  "iva": 20,
+  "total": 420,
+  "moneda": "AED"
+}

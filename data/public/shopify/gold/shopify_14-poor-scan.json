@@ -1,0 +1,22 @@
+{
+  "nit_emisor": null,
+  "nombre_emisor": "Fictional Gulf Foods LLC",
+  "nit_receptor": null,
+  "nombre_receptor": "Example Grocery Trading LLC, Dubai",
+  "fecha": "2026-08-14",
+  "serie": null,
+  "numero": "INV-2026-014",
+  "autorizacion": null,
+  "lineas": [
+    {
+      "descripcion": "Sparkling Water 330ml",
+      "cantidad": 24,
+      "precio_unitario": 2.5,
+      "total_linea": 60
+    }
+  ],
+  "subtotal": 60,
+  "iva": 3,
+  "total": 63,
+  "moneda": "AED"
+}

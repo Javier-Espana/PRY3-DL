@@ -29,11 +29,12 @@ with st.sidebar:
     modelos = list(PRECIOS)
     por_defecto = os.getenv("FACTURAS_MODEL", DEFAULT_MODEL)
     modelo = st.selectbox("Modelo", modelos, index=modelos.index(por_defecto) if por_defecto in modelos else 0)
-    reintentos = st.slider("Reintentos de corrección", 0, 2, 1)
-    st.info("Los documentos se envían a la API de Anthropic. No subas facturas con datos que no puedas compartir.")
+    reintentos = st.slider("Reintentos de corrección", 0, 1, 1)
+    st.info("Los documentos se envían a OpenAI o Anthropic según el modelo. No subas facturas con datos que no puedas compartir.")
 
-if not os.getenv("ANTHROPIC_API_KEY"):
-    st.error("Falta ANTHROPIC_API_KEY. Copia .env.example a .env y agrega la clave.")
+api_key_name = "ANTHROPIC_API_KEY" if modelo.startswith("claude-") else "OPENAI_API_KEY"
+if not os.getenv(api_key_name):
+    st.error(f"Falta {api_key_name}. Copia .env.example a .env y agrega la clave.")
     st.stop()
 
 archivo = st.file_uploader("Factura (PDF, PNG, JPG)", type=["pdf", "png", "jpg", "jpeg", "webp"])

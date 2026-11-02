@@ -84,7 +84,7 @@ def crear_caso(rng: random.Random, i: int) -> tuple[dict, dict]:
     suma = round(sum(l["total_linea"] for l in lineas), 2)
     # En FEL los precios suelen incluir IVA: aquí el total es la suma y el subtotal es total/1.12.
     if pequeno:
-        subtotal, iva, total = suma, None, suma
+        subtotal, iva, total = None, None, suma
     else:
         total = suma
         subtotal = round(total / 1.12, 2)

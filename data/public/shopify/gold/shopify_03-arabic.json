@@ -1,0 +1,22 @@
+{
+  "nit_emisor": null,
+  "nombre_emisor": "شركة الخليج الغذائية التجريبية ذ.م.م",
+  "nit_receptor": null,
+  "nombre_receptor": "شركة البقالة النموذجية ذ.م.م، دبي",
+  "fecha": "2026-08-03",
+  "serie": null,
+  "numero": "INV-2026-003",
+  "autorizacion": null,
+  "lineas": [
+    {
+      "descripcion": "مياه غازية 330 مل",
+      "cantidad": 24,
+      "precio_unitario": 2.5,
+      "total_linea": 60
+    }
+  ],
+  "subtotal": 60,
+  "iva": 3,
+  "total": 63,
+  "moneda": "AED"
+}

@@ -1,0 +1,28 @@
+{
+  "nit_emisor": "100123456700003",
+  "nombre_emisor": "Fictional Gulf Foods LLC",
+  "nit_receptor": null,
+  "nombre_receptor": "Example Grocery Trading LLC, Dubai",
+  "fecha": "2026-08-05",
+  "serie": null,
+  "numero": "INV-2026-005",
+  "autorizacion": null,
+  "lineas": [
+    {
+      "descripcion": "Extra Virgin Olive Oil 1L",
+      "cantidad": 40,
+      "precio_unitario": 18,
+      "total_linea": 720
+    },
+    {
+      "descripcion": "Medjool Dates 1kg",
+      "cantidad": 20,
+      "precio_unitario": 14,
+      "total_linea": 280
+    }
+  ],
+  "subtotal": 1000,
+  "iva": 50,
+  "total": 1050,
+  "moneda": "AED"
+}

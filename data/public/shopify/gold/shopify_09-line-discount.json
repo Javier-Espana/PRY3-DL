@@ -1,0 +1,28 @@
+{
+  "nit_emisor": "100123456700003",
+  "nombre_emisor": "Fictional Gulf Foods LLC",
+  "nit_receptor": null,
+  "nombre_receptor": "Example Grocery Trading LLC, Dubai",
+  "fecha": "2026-08-09",
+  "serie": null,
+  "numero": "INV-2026-009",
+  "autorizacion": null,
+  "lineas": [
+    {
+      "descripcion": "Yoghurt 500g",
+      "cantidad": 20,
+      "precio_unitario": 4,
+      "total_linea": 72
+    },
+    {
+      "descripcion": "Labneh 400g",
+      "cantidad": 10,
+      "precio_unitario": 6,
+      "total_linea": 60
+    }
+  ],
+  "subtotal": 132,
+  "iva": 6.6,
+  "total": 138.6,
+  "moneda": "AED"
+}

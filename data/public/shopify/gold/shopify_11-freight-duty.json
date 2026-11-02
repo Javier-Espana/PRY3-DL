@@ -1,0 +1,28 @@
+{
+  "nit_emisor": null,
+  "nombre_emisor": "Fictional Atlantic Imports Inc.",
+  "nit_receptor": null,
+  "nombre_receptor": "Example Grocery Trading LLC, Dubai",
+  "fecha": "2026-08-11",
+  "serie": null,
+  "numero": "INV-2026-011",
+  "autorizacion": null,
+  "lineas": [
+    {
+      "descripcion": "Ceramic Bowl 18cm",
+      "cantidad": 40,
+      "precio_unitario": 8,
+      "total_linea": 320
+    },
+    {
+      "descripcion": "Serving Tray 40cm",
+      "cantidad": 20,
+      "precio_unitario": 15,
+      "total_linea": 300
+    }
+  ],
+  "subtotal": 620,
+  "iva": 31,
+  "total": 704,
+  "moneda": "AED"
+}

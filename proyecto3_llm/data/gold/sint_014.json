@@ -1,0 +1,28 @@
+{
+  "nit_emisor": "75552183",
+  "nombre_emisor": "Farmacia Vida Nueva, S.A.",
+  "nit_receptor": "4886194",
+  "nombre_receptor": "Juan Pérez López",
+  "fecha": "2026-01-15",
+  "serie": "1D2226E7",
+  "numero": "624612608",
+  "autorizacion": "D7308713-ADB1-9993-8F13-3EED22FF7C2E",
+  "lineas": [
+    {
+      "descripcion": "Aceite de motor 1 L",
+      "cantidad": 10,
+      "precio_unitario": 79.9,
+      "total_linea": 799.0
+    },
+    {
+      "descripcion": "Tomate (caja)",
+      "cantidad": 10,
+      "precio_unitario": 87.81,
+      "total_linea": 878.1
+    }
+  ],
+  "subtotal": 1497.41,
+  "iva": 179.69,
+  "total": 1677.1,
+  "moneda": "GTQ"
+}

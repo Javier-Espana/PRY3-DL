@@ -1,0 +1,46 @@
+{
+  "nit_emisor": "67534783",
+  "nombre_emisor": "Panadería San Jerónimo, Ltda.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-09-04",
+  "serie": "B85BB53C",
+  "numero": "284814430",
+  "autorizacion": "3075EA81-6EFF-8CEF-A41F-7AAB341D057A",
+  "lineas": [
+    {
+      "descripcion": "Servicio de instalación",
+      "cantidad": 1,
+      "precio_unitario": 279.32,
+      "total_linea": 279.32
+    },
+    {
+      "descripcion": "Silla de oficina",
+      "cantidad": 1,
+      "precio_unitario": 643.65,
+      "total_linea": 643.65
+    },
+    {
+      "descripcion": "Café molido 1 lb",
+      "cantidad": 3,
+      "precio_unitario": 42.74,
+      "total_linea": 128.22
+    },
+    {
+      "descripcion": "Resma papel carta",
+      "cantidad": 0.5,
+      "precio_unitario": 49.49,
+      "total_linea": 24.75
+    },
+    {
+      "descripcion": "Fertilizante 50 lb",
+      "cantidad": 1,
+      "precio_unitario": 201.36,
+      "total_linea": 201.36
+    }
+  ],
+  "subtotal": 1277.3,
+  "iva": null,
+  "total": 1277.3,
+  "moneda": "GTQ"
+}

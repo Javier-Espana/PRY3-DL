@@ -1,0 +1,22 @@
+{
+  "nit_emisor": "215711K",
+  "nombre_emisor": "Agroinsumos del Lago, Ltda.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-07-15",
+  "serie": "EEB112DF",
+  "numero": "975400742",
+  "autorizacion": "5859B6D7-95D7-371D-EAED-9E2974B8146A",
+  "lineas": [
+    {
+      "descripcion": "Mantenimiento mensual",
+      "cantidad": 2,
+      "precio_unitario": 824.31,
+      "total_linea": 1648.62
+    }
+  ],
+  "subtotal": 1471.98,
+  "iva": 176.64,
+  "total": 1648.62,
+  "moneda": "GTQ"
+}

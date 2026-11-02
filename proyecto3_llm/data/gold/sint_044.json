@@ -1,0 +1,64 @@
+{
+  "nit_emisor": "0074851K",
+  "nombre_emisor": "Panadería San Jerónimo, y Cía.",
+  "nit_receptor": "81013310",
+  "nombre_receptor": "Rosa Tojín Cux",
+  "fecha": "2026-07-10",
+  "serie": "0E427828",
+  "numero": "754017495",
+  "autorizacion": "C74129C5-A497-6857-D42E-16AB54E4E4E0",
+  "lineas": [
+    {
+      "descripcion": "Pan francés (docena)",
+      "cantidad": 3,
+      "precio_unitario": 20.07,
+      "total_linea": 60.21
+    },
+    {
+      "descripcion": "Paracetamol 500 mg",
+      "cantidad": 1,
+      "precio_unitario": 23.69,
+      "total_linea": 23.69
+    },
+    {
+      "descripcion": "Aceite de motor 1 L",
+      "cantidad": 10,
+      "precio_unitario": 72.35,
+      "total_linea": 723.5
+    },
+    {
+      "descripcion": "Cable UTP cat6 (metro)",
+      "cantidad": 1,
+      "precio_unitario": 7.47,
+      "total_linea": 7.47
+    },
+    {
+      "descripcion": "Tornillo 1/2 pulg (caja)",
+      "cantidad": 1,
+      "precio_unitario": 31.03,
+      "total_linea": 31.03
+    },
+    {
+      "descripcion": "Cuaderno universitario",
+      "cantidad": 2,
+      "precio_unitario": 14.74,
+      "total_linea": 29.48
+    },
+    {
+      "descripcion": "Servicio de instalación",
+      "cantidad": 0.5,
+      "precio_unitario": 242.94,
+      "total_linea": 121.47
+    },
+    {
+      "descripcion": "Resma papel carta",
+      "cantidad": 1,
+      "precio_unitario": 58.12,
+      "total_linea": 58.12
+    }
+  ],
+  "subtotal": 941.94,
+  "iva": 113.03,
+  "total": 1054.97,
+  "moneda": "GTQ"
+}

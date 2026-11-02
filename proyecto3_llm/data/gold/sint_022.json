@@ -1,0 +1,46 @@
+{
+  "nit_emisor": "79674526",
+  "nombre_emisor": "Muebles Atitlán, y Cía.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-02-22",
+  "serie": "3AD55607",
+  "numero": "813707123",
+  "autorizacion": "19FC5798-CCD2-FA2D-2A76-F010534F7317",
+  "lineas": [
+    {
+      "descripcion": "Resma papel carta",
+      "cantidad": 3,
+      "precio_unitario": 54.96,
+      "total_linea": 164.88
+    },
+    {
+      "descripcion": "Cable UTP cat6 (metro)",
+      "cantidad": 1,
+      "precio_unitario": 6.22,
+      "total_linea": 6.22
+    },
+    {
+      "descripcion": "Queso fresco 1 lb",
+      "cantidad": 2,
+      "precio_unitario": 28.31,
+      "total_linea": 56.62
+    },
+    {
+      "descripcion": "Silla de oficina",
+      "cantidad": 1,
+      "precio_unitario": 711.32,
+      "total_linea": 711.32
+    },
+    {
+      "descripcion": "Café molido 1 lb",
+      "cantidad": 2,
+      "precio_unitario": 45.44,
+      "total_linea": 90.88
+    }
+  ],
+  "subtotal": 1029.92,
+  "iva": null,
+  "total": 1029.92,
+  "moneda": "GTQ"
+}

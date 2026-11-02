@@ -84,3 +84,16 @@ def test_formato_no_soportado_no_lanza(tmp_path):
     txt.write_text("hola")
     r = extraer(txt, client=SimpleNamespace())
     assert r.factura is None and "Formato no soportado" in r.error
+
+
+def test_generador_sintetico_es_consistente_y_reproducible():
+    import random
+
+    from scripts.make_synthetic import crear_caso
+
+    g1, _ = crear_caso(random.Random(7), 1)
+    g2, _ = crear_caso(random.Random(7), 1)
+    assert g1 == g2
+    for seed in range(30):
+        g, _ = crear_caso(random.Random(seed), 1)
+        assert validar(Factura(**g)) == []

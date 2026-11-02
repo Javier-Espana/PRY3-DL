@@ -1,0 +1,64 @@
+{
+  "nit_emisor": "86922718",
+  "nombre_emisor": "Taller Mecánico Chimaltenango, E.I.R.L.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-04-23",
+  "serie": "29B8E8B4",
+  "numero": "819452905",
+  "autorizacion": "C4782C22-BFC9-DEC4-A367-43B12085DCB3",
+  "lineas": [
+    {
+      "descripcion": "Impresión banner",
+      "cantidad": 2,
+      "precio_unitario": 121.26,
+      "total_linea": 242.52
+    },
+    {
+      "descripcion": "Resma papel carta",
+      "cantidad": 0.5,
+      "precio_unitario": 55.18,
+      "total_linea": 27.59
+    },
+    {
+      "descripcion": "Pan francés (docena)",
+      "cantidad": 10,
+      "precio_unitario": 17.97,
+      "total_linea": 179.7
+    },
+    {
+      "descripcion": "Cuaderno universitario",
+      "cantidad": 1,
+      "precio_unitario": 14.85,
+      "total_linea": 14.85
+    },
+    {
+      "descripcion": "Silla de oficina",
+      "cantidad": 0.5,
+      "precio_unitario": 603.56,
+      "total_linea": 301.78
+    },
+    {
+      "descripcion": "Servicio de instalación",
+      "cantidad": 5,
+      "precio_unitario": 282.55,
+      "total_linea": 1412.75
+    },
+    {
+      "descripcion": "Tornillo 1/2 pulg (caja)",
+      "cantidad": 5,
+      "precio_unitario": 30.67,
+      "total_linea": 153.35
+    },
+    {
+      "descripcion": "Aceite de motor 1 L",
+      "cantidad": 1,
+      "precio_unitario": 71.56,
+      "total_linea": 71.56
+    }
+  ],
+  "subtotal": 2146.52,
+  "iva": 257.58,
+  "total": 2404.1,
+  "moneda": "GTQ"
+}

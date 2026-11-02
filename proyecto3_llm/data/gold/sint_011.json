@@ -1,0 +1,34 @@
+{
+  "nit_emisor": "556963K",
+  "nombre_emisor": "Lácteos de Verapaz, E.I.R.L.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-03-21",
+  "serie": "1350FBE7",
+  "numero": "383062974",
+  "autorizacion": "44A73DA5-A07A-FFAD-8B8C-C88A253676A6",
+  "lineas": [
+    {
+      "descripcion": "Servicio de instalación",
+      "cantidad": 5,
+      "precio_unitario": 245.73,
+      "total_linea": 1228.65
+    },
+    {
+      "descripcion": "Cable UTP cat6 (metro)",
+      "cantidad": 10,
+      "precio_unitario": 6.92,
+      "total_linea": 69.2
+    },
+    {
+      "descripcion": "Fertilizante 50 lb",
+      "cantidad": 3,
+      "precio_unitario": 189.15,
+      "total_linea": 567.45
+    }
+  ],
+  "subtotal": 1665.45,
+  "iva": 199.85,
+  "total": 1865.3,
+  "moneda": "GTQ"
+}

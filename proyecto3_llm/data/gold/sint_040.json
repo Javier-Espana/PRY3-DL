@@ -1,0 +1,28 @@
+{
+  "nit_emisor": "60471395",
+  "nombre_emisor": "Tecnoservicios Quetzal, E.I.R.L.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-04-27",
+  "serie": "0AFA3F13",
+  "numero": "151626522",
+  "autorizacion": "B2297A1D-43D3-DACD-6D59-166A5677CD38",
+  "lineas": [
+    {
+      "descripcion": "Queso fresco 1 lb",
+      "cantidad": 1,
+      "precio_unitario": 29.5,
+      "total_linea": 29.5
+    },
+    {
+      "descripcion": "Aceite de motor 1 L",
+      "cantidad": 0.5,
+      "precio_unitario": 79.28,
+      "total_linea": 39.64
+    }
+  ],
+  "subtotal": 61.73,
+  "iva": 7.41,
+  "total": 69.14,
+  "moneda": "GTQ"
+}

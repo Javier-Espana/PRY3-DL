@@ -1,0 +1,34 @@
+{
+  "nit_emisor": "8242208",
+  "nombre_emisor": "Distribuidora Los Volcanes, Ltda.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-05-31",
+  "serie": "CCD19643",
+  "numero": "850781063",
+  "autorizacion": "0F6A7678-61D1-88CF-0B4F-40F85D64FBD6",
+  "lineas": [
+    {
+      "descripcion": "Cable UTP cat6 (metro)",
+      "cantidad": 0.5,
+      "precio_unitario": 7.45,
+      "total_linea": 3.73
+    },
+    {
+      "descripcion": "Cuaderno universitario",
+      "cantidad": 3,
+      "precio_unitario": 13.98,
+      "total_linea": 41.94
+    },
+    {
+      "descripcion": "Tornillo 1/2 pulg (caja)",
+      "cantidad": 1,
+      "precio_unitario": 34.74,
+      "total_linea": 34.74
+    }
+  ],
+  "subtotal": 71.79,
+  "iva": 8.62,
+  "total": 80.41,
+  "moneda": "GTQ"
+}

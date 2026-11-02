@@ -1,0 +1,58 @@
+{
+  "nit_emisor": "9474781",
+  "nombre_emisor": "Comercial Xelajú, y Cía.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-02-08",
+  "serie": "6C60C930",
+  "numero": "699788555",
+  "autorizacion": "8F23CF31-BD17-3FF0-01F3-165BB0B1B22E",
+  "lineas": [
+    {
+      "descripcion": "Tomate (caja)",
+      "cantidad": 1,
+      "precio_unitario": 91.35,
+      "total_linea": 91.35
+    },
+    {
+      "descripcion": "Fertilizante 50 lb",
+      "cantidad": 2,
+      "precio_unitario": 175.73,
+      "total_linea": 351.46
+    },
+    {
+      "descripcion": "Mantenimiento mensual",
+      "cantidad": 1,
+      "precio_unitario": 927.35,
+      "total_linea": 927.35
+    },
+    {
+      "descripcion": "Cable UTP cat6 (metro)",
+      "cantidad": 1,
+      "precio_unitario": 6.25,
+      "total_linea": 6.25
+    },
+    {
+      "descripcion": "Servicio de instalación",
+      "cantidad": 2,
+      "precio_unitario": 275.62,
+      "total_linea": 551.24
+    },
+    {
+      "descripcion": "Aceite de motor 1 L",
+      "cantidad": 2,
+      "precio_unitario": 85.3,
+      "total_linea": 170.6
+    },
+    {
+      "descripcion": "Pan francés (docena)",
+      "cantidad": 2,
+      "precio_unitario": 18.96,
+      "total_linea": 37.92
+    }
+  ],
+  "subtotal": 1907.29,
+  "iva": 228.88,
+  "total": 2136.17,
+  "moneda": "GTQ"
+}

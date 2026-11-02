@@ -31,6 +31,17 @@ cp .env.example .env                            # y pon tu ANTHROPIC_API_KEY
 .venv/Scripts/python -m pytest -q               # tests (no llaman a la API)
 ```
 
+## Datos sintéticos
+
+```bash
+python scripts/make_synthetic.py --n 45 --seed 2026
+```
+
+Genera `data/docs/sint_XXX.pdf|png` y `data/gold/sint_XXX.json` (nombres, NIT y UUID inventados).
+Hay 4 layouts, etiquetas y formatos de fecha distintos, 1–8 líneas, ~10 % de pequeño contribuyente
+(sin IVA) y ~25 % de imágenes con rotación, ruido y desenfoque. Con la misma semilla salen los mismos datos.
+**En el informe hay que declarar que este conjunto es sintético**; complétenlo con facturas reales anonimizadas.
+
 ## Evaluación (reproducir métricas)
 
 Pon los documentos en `data/docs/` y su referencia en `data/gold/<nombre>.json`.
@@ -49,7 +60,8 @@ correctos, latencia, tokens y costo. Esas corridas son la tabla de iteraciones d
 
 ## Pendientes (ver también el plan del proyecto)
 
-- [ ] Reunir 40–50 documentos + gold (la mitad etiquetada por cada integrante, con revisión cruzada).
+- [x] Conjunto sintético de 45 documentos (`scripts/make_synthetic.py`).
+- [ ] Añadir 10–15 facturas reales anonimizadas, etiquetadas a mano con revisión cruzada.
 - [ ] Verificar el algoritmo del dígito verificador del NIT (`src/validators.py`) con NITs reales.
 - [ ] Verificar los campos del esquema contra 2–3 facturas FEL reales.
 - [ ] Ajustar los patrones del baseline regex (`src/baseline_regex.py`) a las facturas reales.

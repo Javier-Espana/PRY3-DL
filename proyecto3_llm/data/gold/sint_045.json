@@ -1,0 +1,46 @@
+{
+  "nit_emisor": "9218890",
+  "nombre_emisor": "Panadería San Jerónimo, y Cía.",
+  "nit_receptor": "4995317",
+  "nombre_receptor": "Rosa Tojín Cux",
+  "fecha": "2026-06-03",
+  "serie": "C1D44637",
+  "numero": "203183308",
+  "autorizacion": "E4D60753-5393-84BB-8648-89926AE60D55",
+  "lineas": [
+    {
+      "descripcion": "Cuaderno universitario",
+      "cantidad": 1,
+      "precio_unitario": 16.07,
+      "total_linea": 16.07
+    },
+    {
+      "descripcion": "Tomate (caja)",
+      "cantidad": 3,
+      "precio_unitario": 83.91,
+      "total_linea": 251.73
+    },
+    {
+      "descripcion": "Cable UTP cat6 (metro)",
+      "cantidad": 10,
+      "precio_unitario": 6.25,
+      "total_linea": 62.5
+    },
+    {
+      "descripcion": "Pan francés (docena)",
+      "cantidad": 10,
+      "precio_unitario": 19.06,
+      "total_linea": 190.6
+    },
+    {
+      "descripcion": "Servicio de instalación",
+      "cantidad": 0.5,
+      "precio_unitario": 229.32,
+      "total_linea": 114.66
+    }
+  ],
+  "subtotal": 567.46,
+  "iva": 68.1,
+  "total": 635.56,
+  "moneda": "GTQ"
+}

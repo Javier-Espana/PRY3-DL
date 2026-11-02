@@ -1,0 +1,52 @@
+{
+  "nit_emisor": "53581342",
+  "nombre_emisor": "Papelería La Ceiba, E.I.R.L.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-04-06",
+  "serie": "BC5DE07A",
+  "numero": "394353917",
+  "autorizacion": "E2B5F7BA-B87A-A0D2-F60F-C4DDDABE407F",
+  "lineas": [
+    {
+      "descripcion": "Resma papel carta",
+      "cantidad": 10,
+      "precio_unitario": 55.15,
+      "total_linea": 551.5
+    },
+    {
+      "descripcion": "Cable UTP cat6 (metro)",
+      "cantidad": 1,
+      "precio_unitario": 6.35,
+      "total_linea": 6.35
+    },
+    {
+      "descripcion": "Silla de oficina",
+      "cantidad": 3,
+      "precio_unitario": 621.78,
+      "total_linea": 1865.34
+    },
+    {
+      "descripcion": "Queso fresco 1 lb",
+      "cantidad": 0.5,
+      "precio_unitario": 28.25,
+      "total_linea": 14.12
+    },
+    {
+      "descripcion": "Tomate (caja)",
+      "cantidad": 3,
+      "precio_unitario": 80.77,
+      "total_linea": 242.31
+    },
+    {
+      "descripcion": "Tornillo 1/2 pulg (caja)",
+      "cantidad": 3,
+      "precio_unitario": 33.55,
+      "total_linea": 100.65
+    }
+  ],
+  "subtotal": 2482.38,
+  "iva": 297.89,
+  "total": 2780.27,
+  "moneda": "GTQ"
+}

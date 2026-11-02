@@ -1,0 +1,40 @@
+{
+  "nit_emisor": "2883759",
+  "nombre_emisor": "Tecnoservicios Quetzal, E.I.R.L.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-06-25",
+  "serie": "F3E87A1A",
+  "numero": "968604621",
+  "autorizacion": "C1453DBC-D625-FE97-40FC-7F1B5DBE75B9",
+  "lineas": [
+    {
+      "descripcion": "Paracetamol 500 mg",
+      "cantidad": 1,
+      "precio_unitario": 23.68,
+      "total_linea": 23.68
+    },
+    {
+      "descripcion": "Tornillo 1/2 pulg (caja)",
+      "cantidad": 1,
+      "precio_unitario": 35.16,
+      "total_linea": 35.16
+    },
+    {
+      "descripcion": "Impresión banner",
+      "cantidad": 10,
+      "precio_unitario": 123.65,
+      "total_linea": 1236.5
+    },
+    {
+      "descripcion": "Queso fresco 1 lb",
+      "cantidad": 5,
+      "precio_unitario": 29.11,
+      "total_linea": 145.55
+    }
+  ],
+  "subtotal": 1286.51,
+  "iva": 154.38,
+  "total": 1440.89,
+  "moneda": "GTQ"
+}

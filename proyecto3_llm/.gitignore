@@ -6,5 +6,6 @@ __pycache__/
 data/docs/*
 !data/docs/.gitkeep
 !data/docs/README.md
+!data/docs/sint_*
 results/*.json
 !results/.gitkeep

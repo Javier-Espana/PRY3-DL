@@ -1,0 +1,22 @@
+{
+  "nit_emisor": "7799225",
+  "nombre_emisor": "Farmacia Vida Nueva, y Cía.",
+  "nit_receptor": "6957935",
+  "nombre_receptor": "Restaurante El Fogón",
+  "fecha": "2026-02-05",
+  "serie": "2A4C48A7",
+  "numero": "788110381",
+  "autorizacion": "ADBAFED0-B600-860C-7BDC-FD55304374B3",
+  "lineas": [
+    {
+      "descripcion": "Café molido 1 lb",
+      "cantidad": 5,
+      "precio_unitario": 45.86,
+      "total_linea": 229.3
+    }
+  ],
+  "subtotal": 204.73,
+  "iva": 24.57,
+  "total": 229.3,
+  "moneda": "GTQ"
+}

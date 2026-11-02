@@ -1,0 +1,52 @@
+{
+  "nit_emisor": "775888K",
+  "nombre_emisor": "Panadería San Jerónimo, y Cía.",
+  "nit_receptor": "4401905",
+  "nombre_receptor": "Constructora Motagua, S.A.",
+  "fecha": "2026-09-28",
+  "serie": "8304311A",
+  "numero": "441893381",
+  "autorizacion": "644F7AE9-1AEB-50C8-06CE-2AAE2262D5BF",
+  "lineas": [
+    {
+      "descripcion": "Cable UTP cat6 (metro)",
+      "cantidad": 0.5,
+      "precio_unitario": 6.43,
+      "total_linea": 3.21
+    },
+    {
+      "descripcion": "Café molido 1 lb",
+      "cantidad": 1,
+      "precio_unitario": 41.71,
+      "total_linea": 41.71
+    },
+    {
+      "descripcion": "Paracetamol 500 mg",
+      "cantidad": 1,
+      "precio_unitario": 22.88,
+      "total_linea": 22.88
+    },
+    {
+      "descripcion": "Fertilizante 50 lb",
+      "cantidad": 2,
+      "precio_unitario": 191.65,
+      "total_linea": 383.3
+    },
+    {
+      "descripcion": "Silla de oficina",
+      "cantidad": 5,
+      "precio_unitario": 677.29,
+      "total_linea": 3386.45
+    },
+    {
+      "descripcion": "Cuaderno universitario",
+      "cantidad": 1,
+      "precio_unitario": 15.86,
+      "total_linea": 15.86
+    }
+  ],
+  "subtotal": 3440.54,
+  "iva": 412.87,
+  "total": 3853.41,
+  "moneda": "GTQ"
+}

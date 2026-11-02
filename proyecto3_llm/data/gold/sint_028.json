@@ -1,0 +1,64 @@
+{
+  "nit_emisor": "91483352",
+  "nombre_emisor": "Muebles Atitlán, S.A.",
+  "nit_receptor": "14881810",
+  "nombre_receptor": "Restaurante El Fogón",
+  "fecha": "2026-04-26",
+  "serie": "1F6CC240",
+  "numero": "731342404",
+  "autorizacion": "30E95EC9-5CF7-54A1-788C-A38AA58F7FD5",
+  "lineas": [
+    {
+      "descripcion": "Paracetamol 500 mg",
+      "cantidad": 3,
+      "precio_unitario": 20.85,
+      "total_linea": 62.55
+    },
+    {
+      "descripcion": "Queso fresco 1 lb",
+      "cantidad": 10,
+      "precio_unitario": 28.43,
+      "total_linea": 284.3
+    },
+    {
+      "descripcion": "Mantenimiento mensual",
+      "cantidad": 5,
+      "precio_unitario": 843.92,
+      "total_linea": 4219.6
+    },
+    {
+      "descripcion": "Resma papel carta",
+      "cantidad": 2,
+      "precio_unitario": 49.34,
+      "total_linea": 98.68
+    },
+    {
+      "descripcion": "Café molido 1 lb",
+      "cantidad": 0.5,
+      "precio_unitario": 48.26,
+      "total_linea": 24.13
+    },
+    {
+      "descripcion": "Cuaderno universitario",
+      "cantidad": 1,
+      "precio_unitario": 15.7,
+      "total_linea": 15.7
+    },
+    {
+      "descripcion": "Pan francés (docena)",
+      "cantidad": 1,
+      "precio_unitario": 18.3,
+      "total_linea": 18.3
+    },
+    {
+      "descripcion": "Aceite de motor 1 L",
+      "cantidad": 1,
+      "precio_unitario": 74.24,
+      "total_linea": 74.24
+    }
+  ],
+  "subtotal": 4283.48,
+  "iva": 514.02,
+  "total": 4797.5,
+  "moneda": "GTQ"
+}

@@ -1,0 +1,46 @@
+{
+  "nit_emisor": "7038267",
+  "nombre_emisor": "Comercial Xelajú, S.A.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-07-04",
+  "serie": "9D7FDF42",
+  "numero": "609020902",
+  "autorizacion": "94A0DF05-AC64-2A30-C9E3-9659E5A34078",
+  "lineas": [
+    {
+      "descripcion": "Servicio de instalación",
+      "cantidad": 0.5,
+      "precio_unitario": 236.21,
+      "total_linea": 118.11
+    },
+    {
+      "descripcion": "Resma papel carta",
+      "cantidad": 1,
+      "precio_unitario": 55.78,
+      "total_linea": 55.78
+    },
+    {
+      "descripcion": "Queso fresco 1 lb",
+      "cantidad": 0.5,
+      "precio_unitario": 28.8,
+      "total_linea": 14.4
+    },
+    {
+      "descripcion": "Impresión banner",
+      "cantidad": 2,
+      "precio_unitario": 118.22,
+      "total_linea": 236.44
+    },
+    {
+      "descripcion": "Pan francés (docena)",
+      "cantidad": 5,
+      "precio_unitario": 19.6,
+      "total_linea": 98.0
+    }
+  ],
+  "subtotal": 466.72,
+  "iva": 56.01,
+  "total": 522.73,
+  "moneda": "GTQ"
+}

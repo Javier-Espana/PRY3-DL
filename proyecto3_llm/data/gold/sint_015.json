@@ -1,0 +1,34 @@
+{
+  "nit_emisor": "2485273",
+  "nombre_emisor": "Lácteos de Verapaz, y Cía.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-03-28",
+  "serie": "CACC412A",
+  "numero": "337228809",
+  "autorizacion": "8AF1654B-E355-A107-5D39-610983BB5916",
+  "lineas": [
+    {
+      "descripcion": "Aceite de motor 1 L",
+      "cantidad": 0.5,
+      "precio_unitario": 82.8,
+      "total_linea": 41.4
+    },
+    {
+      "descripcion": "Resma papel carta",
+      "cantidad": 10,
+      "precio_unitario": 54.77,
+      "total_linea": 547.7
+    },
+    {
+      "descripcion": "Mantenimiento mensual",
+      "cantidad": 0.5,
+      "precio_unitario": 959.99,
+      "total_linea": 480.0
+    }
+  ],
+  "subtotal": 954.55,
+  "iva": 114.55,
+  "total": 1069.1,
+  "moneda": "GTQ"
+}

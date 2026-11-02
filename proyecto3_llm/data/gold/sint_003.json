@@ -1,0 +1,64 @@
+{
+  "nit_emisor": "8452059",
+  "nombre_emisor": "Papelería La Ceiba, S.A.",
+  "nit_receptor": "28379292",
+  "nombre_receptor": "Restaurante El Fogón",
+  "fecha": "2026-09-16",
+  "serie": "E0CC6320",
+  "numero": "259489639",
+  "autorizacion": "6041F10E-325A-BDEC-CE91-82088520BF0C",
+  "lineas": [
+    {
+      "descripcion": "Aceite de motor 1 L",
+      "cantidad": 0.5,
+      "precio_unitario": 81.15,
+      "total_linea": 40.58
+    },
+    {
+      "descripcion": "Tomate (caja)",
+      "cantidad": 1,
+      "precio_unitario": 90.28,
+      "total_linea": 90.28
+    },
+    {
+      "descripcion": "Silla de oficina",
+      "cantidad": 3,
+      "precio_unitario": 635.22,
+      "total_linea": 1905.66
+    },
+    {
+      "descripcion": "Fertilizante 50 lb",
+      "cantidad": 1,
+      "precio_unitario": 205.42,
+      "total_linea": 205.42
+    },
+    {
+      "descripcion": "Cuaderno universitario",
+      "cantidad": 3,
+      "precio_unitario": 13.11,
+      "total_linea": 39.33
+    },
+    {
+      "descripcion": "Paracetamol 500 mg",
+      "cantidad": 1,
+      "precio_unitario": 20.31,
+      "total_linea": 20.31
+    },
+    {
+      "descripcion": "Resma papel carta",
+      "cantidad": 3,
+      "precio_unitario": 54.87,
+      "total_linea": 164.61
+    },
+    {
+      "descripcion": "Cable UTP cat6 (metro)",
+      "cantidad": 0.5,
+      "precio_unitario": 5.98,
+      "total_linea": 2.99
+    }
+  ],
+  "subtotal": 2204.62,
+  "iva": 264.56,
+  "total": 2469.18,
+  "moneda": "GTQ"
+}

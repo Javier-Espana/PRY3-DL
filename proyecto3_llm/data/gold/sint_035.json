@@ -1,0 +1,34 @@
+{
+  "nit_emisor": "15812995",
+  "nombre_emisor": "Comercial Xelajú, S.A.",
+  "nit_receptor": "4706757",
+  "nombre_receptor": "María Sánchez Ajú",
+  "fecha": "2026-05-14",
+  "serie": "2F09DF00",
+  "numero": "656421956",
+  "autorizacion": "D043A70C-E74C-F521-FCC8-07FB2585B4AC",
+  "lineas": [
+    {
+      "descripcion": "Tornillo 1/2 pulg (caja)",
+      "cantidad": 1,
+      "precio_unitario": 36.57,
+      "total_linea": 36.57
+    },
+    {
+      "descripcion": "Impresión banner",
+      "cantidad": 1,
+      "precio_unitario": 113.9,
+      "total_linea": 113.9
+    },
+    {
+      "descripcion": "Fertilizante 50 lb",
+      "cantidad": 1,
+      "precio_unitario": 209.78,
+      "total_linea": 209.78
+    }
+  ],
+  "subtotal": 321.65,
+  "iva": 38.6,
+  "total": 360.25,
+  "moneda": "GTQ"
+}

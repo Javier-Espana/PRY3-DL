@@ -1,0 +1,28 @@
+{
+  "nit_emisor": "6385605",
+  "nombre_emisor": "Taller Mecánico Chimaltenango, E.I.R.L.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-09-08",
+  "serie": "DCDB1021",
+  "numero": "334683135",
+  "autorizacion": "878FC1DE-08B6-F768-BAF0-F074627D12F9",
+  "lineas": [
+    {
+      "descripcion": "Aceite de motor 1 L",
+      "cantidad": 2,
+      "precio_unitario": 80.95,
+      "total_linea": 161.9
+    },
+    {
+      "descripcion": "Mantenimiento mensual",
+      "cantidad": 2,
+      "precio_unitario": 1025.6,
+      "total_linea": 2051.2
+    }
+  ],
+  "subtotal": 2213.1,
+  "iva": null,
+  "total": 2213.1,
+  "moneda": "GTQ"
+}

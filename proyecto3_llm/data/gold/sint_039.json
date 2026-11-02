@@ -1,0 +1,40 @@
+{
+  "nit_emisor": "2223864",
+  "nombre_emisor": "Lácteos de Verapaz, Ltda.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-04-15",
+  "serie": "18610EAE",
+  "numero": "284017848",
+  "autorizacion": "850535D8-6330-721B-D7D5-148A4943E768",
+  "lineas": [
+    {
+      "descripcion": "Cuaderno universitario",
+      "cantidad": 0.5,
+      "precio_unitario": 14.45,
+      "total_linea": 7.22
+    },
+    {
+      "descripcion": "Pan francés (docena)",
+      "cantidad": 0.5,
+      "precio_unitario": 17.16,
+      "total_linea": 8.58
+    },
+    {
+      "descripcion": "Impresión banner",
+      "cantidad": 5,
+      "precio_unitario": 120.08,
+      "total_linea": 600.4
+    },
+    {
+      "descripcion": "Café molido 1 lb",
+      "cantidad": 10,
+      "precio_unitario": 41.24,
+      "total_linea": 412.4
+    }
+  ],
+  "subtotal": 918.39,
+  "iva": 110.21,
+  "total": 1028.6,
+  "moneda": "GTQ"
+}

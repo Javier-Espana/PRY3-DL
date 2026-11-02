@@ -1,0 +1,40 @@
+{
+  "nit_emisor": "60821965",
+  "nombre_emisor": "Muebles Atitlán, Ltda.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-02-25",
+  "serie": "CD901AC2",
+  "numero": "918058326",
+  "autorizacion": "99F641A9-6481-A0FF-9479-3B44B08ED1CF",
+  "lineas": [
+    {
+      "descripcion": "Tornillo 1/2 pulg (caja)",
+      "cantidad": 2,
+      "precio_unitario": 37.68,
+      "total_linea": 75.36
+    },
+    {
+      "descripcion": "Aceite de motor 1 L",
+      "cantidad": 3,
+      "precio_unitario": 78.59,
+      "total_linea": 235.77
+    },
+    {
+      "descripcion": "Queso fresco 1 lb",
+      "cantidad": 10,
+      "precio_unitario": 28.26,
+      "total_linea": 282.6
+    },
+    {
+      "descripcion": "Resma papel carta",
+      "cantidad": 1,
+      "precio_unitario": 60.21,
+      "total_linea": 60.21
+    }
+  ],
+  "subtotal": 583.88,
+  "iva": 70.06,
+  "total": 653.94,
+  "moneda": "GTQ"
+}

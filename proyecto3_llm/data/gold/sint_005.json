@@ -1,0 +1,28 @@
+{
+  "nit_emisor": "72587717",
+  "nombre_emisor": "Muebles Atitlán, E.I.R.L.",
+  "nit_receptor": "13301756",
+  "nombre_receptor": "Colegio Los Pinos",
+  "fecha": "2026-10-07",
+  "serie": "6749FC23",
+  "numero": "678079774",
+  "autorizacion": "B74C990A-9EEB-BA4E-1C14-DF92376F5364",
+  "lineas": [
+    {
+      "descripcion": "Cable UTP cat6 (metro)",
+      "cantidad": 1,
+      "precio_unitario": 6.41,
+      "total_linea": 6.41
+    },
+    {
+      "descripcion": "Cuaderno universitario",
+      "cantidad": 2,
+      "precio_unitario": 14.22,
+      "total_linea": 28.44
+    }
+  ],
+  "subtotal": 31.12,
+  "iva": 3.73,
+  "total": 34.85,
+  "moneda": "GTQ"
+}

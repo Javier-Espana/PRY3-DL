@@ -1,0 +1,64 @@
+{
+  "nit_emisor": "96505656",
+  "nombre_emisor": "Librería Pop Wuj, E.I.R.L.",
+  "nit_receptor": "70567093",
+  "nombre_receptor": "Constructora Motagua, S.A.",
+  "fecha": "2026-05-31",
+  "serie": "22A60089",
+  "numero": "376342958",
+  "autorizacion": "0EC3703B-37E1-6834-34CC-204400923538",
+  "lineas": [
+    {
+      "descripcion": "Resma papel carta",
+      "cantidad": 1,
+      "precio_unitario": 59.29,
+      "total_linea": 59.29
+    },
+    {
+      "descripcion": "Servicio de instalación",
+      "cantidad": 5,
+      "precio_unitario": 262.18,
+      "total_linea": 1310.9
+    },
+    {
+      "descripcion": "Fertilizante 50 lb",
+      "cantidad": 10,
+      "precio_unitario": 185.14,
+      "total_linea": 1851.4
+    },
+    {
+      "descripcion": "Cuaderno universitario",
+      "cantidad": 10,
+      "precio_unitario": 13.03,
+      "total_linea": 130.3
+    },
+    {
+      "descripcion": "Aceite de motor 1 L",
+      "cantidad": 2,
+      "precio_unitario": 75.11,
+      "total_linea": 150.22
+    },
+    {
+      "descripcion": "Queso fresco 1 lb",
+      "cantidad": 3,
+      "precio_unitario": 29.49,
+      "total_linea": 88.47
+    },
+    {
+      "descripcion": "Pan francés (docena)",
+      "cantidad": 5,
+      "precio_unitario": 17.89,
+      "total_linea": 89.45
+    },
+    {
+      "descripcion": "Tornillo 1/2 pulg (caja)",
+      "cantidad": 1,
+      "precio_unitario": 38.61,
+      "total_linea": 38.61
+    }
+  ],
+  "subtotal": 3320.21,
+  "iva": 398.43,
+  "total": 3718.64,
+  "moneda": "GTQ"
+}

@@ -1,0 +1,58 @@
+{
+  "nit_emisor": "27317781",
+  "nombre_emisor": "Taller Mecánico Chimaltenango, E.I.R.L.",
+  "nit_receptor": "86488767",
+  "nombre_receptor": "Colegio Los Pinos",
+  "fecha": "2026-04-14",
+  "serie": "EEA43121",
+  "numero": "314573957",
+  "autorizacion": "7776C655-7C4E-4248-B151-5FFF42969A50",
+  "lineas": [
+    {
+      "descripcion": "Fertilizante 50 lb",
+      "cantidad": 2,
+      "precio_unitario": 210.0,
+      "total_linea": 420.0
+    },
+    {
+      "descripcion": "Silla de oficina",
+      "cantidad": 5,
+      "precio_unitario": 724.2,
+      "total_linea": 3621.0
+    },
+    {
+      "descripcion": "Mantenimiento mensual",
+      "cantidad": 3,
+      "precio_unitario": 925.41,
+      "total_linea": 2776.23
+    },
+    {
+      "descripcion": "Impresión banner",
+      "cantidad": 0.5,
+      "precio_unitario": 108.76,
+      "total_linea": 54.38
+    },
+    {
+      "descripcion": "Paracetamol 500 mg",
+      "cantidad": 1,
+      "precio_unitario": 24.01,
+      "total_linea": 24.01
+    },
+    {
+      "descripcion": "Cable UTP cat6 (metro)",
+      "cantidad": 0.5,
+      "precio_unitario": 5.93,
+      "total_linea": 2.96
+    },
+    {
+      "descripcion": "Tomate (caja)",
+      "cantidad": 10,
+      "precio_unitario": 87.62,
+      "total_linea": 876.2
+    }
+  ],
+  "subtotal": 6941.77,
+  "iva": 833.01,
+  "total": 7774.78,
+  "moneda": "GTQ"
+}

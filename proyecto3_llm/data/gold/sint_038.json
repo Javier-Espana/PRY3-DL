@@ -1,0 +1,52 @@
+{
+  "nit_emisor": "33516588",
+  "nombre_emisor": "Ferretería El Tornillo Feliz, Ltda.",
+  "nit_receptor": "09868011",
+  "nombre_receptor": "María Sánchez Ajú",
+  "fecha": "2026-05-10",
+  "serie": "D0A88CFC",
+  "numero": "480628526",
+  "autorizacion": "5E2D7001-0079-CCE7-2889-EC58D79CD4B7",
+  "lineas": [
+    {
+      "descripcion": "Café molido 1 lb",
+      "cantidad": 1,
+      "precio_unitario": 48.72,
+      "total_linea": 48.72
+    },
+    {
+      "descripcion": "Pan francés (docena)",
+      "cantidad": 0.5,
+      "precio_unitario": 16.44,
+      "total_linea": 8.22
+    },
+    {
+      "descripcion": "Tornillo 1/2 pulg (caja)",
+      "cantidad": 1,
+      "precio_unitario": 37.78,
+      "total_linea": 37.78
+    },
+    {
+      "descripcion": "Aceite de motor 1 L",
+      "cantidad": 10,
+      "precio_unitario": 76.58,
+      "total_linea": 765.8
+    },
+    {
+      "descripcion": "Servicio de instalación",
+      "cantidad": 1,
+      "precio_unitario": 270.29,
+      "total_linea": 270.29
+    },
+    {
+      "descripcion": "Mantenimiento mensual",
+      "cantidad": 0.5,
+      "precio_unitario": 916.77,
+      "total_linea": 458.38
+    }
+  ],
+  "subtotal": 1418.92,
+  "iva": 170.27,
+  "total": 1589.19,
+  "moneda": "GTQ"
+}

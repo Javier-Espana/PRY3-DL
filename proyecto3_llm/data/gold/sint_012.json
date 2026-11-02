@@ -1,0 +1,58 @@
+{
+  "nit_emisor": "84259965",
+  "nombre_emisor": "Café Altiplano, S.A.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-09-01",
+  "serie": "71A6449F",
+  "numero": "937271956",
+  "autorizacion": "83D335A6-7506-E7D2-CA6E-3FC8358FB7FC",
+  "lineas": [
+    {
+      "descripcion": "Café molido 1 lb",
+      "cantidad": 1,
+      "precio_unitario": 48.14,
+      "total_linea": 48.14
+    },
+    {
+      "descripcion": "Fertilizante 50 lb",
+      "cantidad": 3,
+      "precio_unitario": 213.03,
+      "total_linea": 639.09
+    },
+    {
+      "descripcion": "Aceite de motor 1 L",
+      "cantidad": 0.5,
+      "precio_unitario": 79.37,
+      "total_linea": 39.69
+    },
+    {
+      "descripcion": "Servicio de instalación",
+      "cantidad": 0.5,
+      "precio_unitario": 266.73,
+      "total_linea": 133.37
+    },
+    {
+      "descripcion": "Queso fresco 1 lb",
+      "cantidad": 5,
+      "precio_unitario": 28.82,
+      "total_linea": 144.1
+    },
+    {
+      "descripcion": "Cable UTP cat6 (metro)",
+      "cantidad": 3,
+      "precio_unitario": 6.42,
+      "total_linea": 19.26
+    },
+    {
+      "descripcion": "Silla de oficina",
+      "cantidad": 2,
+      "precio_unitario": 585.61,
+      "total_linea": 1171.22
+    }
+  ],
+  "subtotal": 1959.71,
+  "iva": 235.16,
+  "total": 2194.87,
+  "moneda": "GTQ"
+}

@@ -1,0 +1,34 @@
+{
+  "nit_emisor": "4914524K",
+  "nombre_emisor": "Café Altiplano, S.A.",
+  "nit_receptor": "10646000",
+  "nombre_receptor": "Constructora Motagua, S.A.",
+  "fecha": "2026-05-01",
+  "serie": "AB438F63",
+  "numero": "802997131",
+  "autorizacion": "ECBC0534-09BB-1454-9D7A-21CBB6D6E11F",
+  "lineas": [
+    {
+      "descripcion": "Pan francés (docena)",
+      "cantidad": 1,
+      "precio_unitario": 20.5,
+      "total_linea": 20.5
+    },
+    {
+      "descripcion": "Silla de oficina",
+      "cantidad": 1,
+      "precio_unitario": 592.97,
+      "total_linea": 592.97
+    },
+    {
+      "descripcion": "Cuaderno universitario",
+      "cantidad": 1,
+      "precio_unitario": 15.26,
+      "total_linea": 15.26
+    }
+  ],
+  "subtotal": 561.37,
+  "iva": 67.36,
+  "total": 628.73,
+  "moneda": "GTQ"
+}

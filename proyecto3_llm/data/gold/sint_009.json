@@ -1,0 +1,58 @@
+{
+  "nit_emisor": "1265849",
+  "nombre_emisor": "Agroinsumos del Lago, Ltda.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-06-08",
+  "serie": "A36CE2F9",
+  "numero": "302612020",
+  "autorizacion": "026B3D02-A13B-B87B-BF3B-9167F9E2E7D0",
+  "lineas": [
+    {
+      "descripcion": "Silla de oficina",
+      "cantidad": 5,
+      "precio_unitario": 692.96,
+      "total_linea": 3464.8
+    },
+    {
+      "descripcion": "Café molido 1 lb",
+      "cantidad": 1,
+      "precio_unitario": 48.54,
+      "total_linea": 48.54
+    },
+    {
+      "descripcion": "Queso fresco 1 lb",
+      "cantidad": 1,
+      "precio_unitario": 32.19,
+      "total_linea": 32.19
+    },
+    {
+      "descripcion": "Resma papel carta",
+      "cantidad": 1,
+      "precio_unitario": 54.25,
+      "total_linea": 54.25
+    },
+    {
+      "descripcion": "Pan francés (docena)",
+      "cantidad": 0.5,
+      "precio_unitario": 20.02,
+      "total_linea": 10.01
+    },
+    {
+      "descripcion": "Cuaderno universitario",
+      "cantidad": 5,
+      "precio_unitario": 13.67,
+      "total_linea": 68.35
+    },
+    {
+      "descripcion": "Servicio de instalación",
+      "cantidad": 1,
+      "precio_unitario": 284.72,
+      "total_linea": 284.72
+    }
+  ],
+  "subtotal": 3538.27,
+  "iva": 424.59,
+  "total": 3962.86,
+  "moneda": "GTQ"
+}

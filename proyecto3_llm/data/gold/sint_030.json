@@ -1,0 +1,64 @@
+{
+  "nit_emisor": "6709079",
+  "nombre_emisor": "Muebles Atitlán, S.A.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-03-16",
+  "serie": "71B879ED",
+  "numero": "342191173",
+  "autorizacion": "FC78169E-473C-4470-3525-8928A5356016",
+  "lineas": [
+    {
+      "descripcion": "Fertilizante 50 lb",
+      "cantidad": 2,
+      "precio_unitario": 209.88,
+      "total_linea": 419.76
+    },
+    {
+      "descripcion": "Mantenimiento mensual",
+      "cantidad": 5,
+      "precio_unitario": 971.35,
+      "total_linea": 4856.75
+    },
+    {
+      "descripcion": "Cable UTP cat6 (metro)",
+      "cantidad": 10,
+      "precio_unitario": 6.64,
+      "total_linea": 66.4
+    },
+    {
+      "descripcion": "Queso fresco 1 lb",
+      "cantidad": 3,
+      "precio_unitario": 25.64,
+      "total_linea": 76.92
+    },
+    {
+      "descripcion": "Servicio de instalación",
+      "cantidad": 10,
+      "precio_unitario": 246.39,
+      "total_linea": 2463.9
+    },
+    {
+      "descripcion": "Tomate (caja)",
+      "cantidad": 2,
+      "precio_unitario": 80.79,
+      "total_linea": 161.58
+    },
+    {
+      "descripcion": "Tornillo 1/2 pulg (caja)",
+      "cantidad": 2,
+      "precio_unitario": 35.06,
+      "total_linea": 70.12
+    },
+    {
+      "descripcion": "Café molido 1 lb",
+      "cantidad": 5,
+      "precio_unitario": 44.37,
+      "total_linea": 221.85
+    }
+  ],
+  "subtotal": 8337.28,
+  "iva": null,
+  "total": 8337.28,
+  "moneda": "GTQ"
+}

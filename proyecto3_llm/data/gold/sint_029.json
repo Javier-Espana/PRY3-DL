@@ -1,0 +1,46 @@
+{
+  "nit_emisor": "4146174",
+  "nombre_emisor": "Lácteos de Verapaz, S.A.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-06-11",
+  "serie": "EC98AB6B",
+  "numero": "316337300",
+  "autorizacion": "8A4C27C1-EFE8-6A01-33DB-935AA7775743",
+  "lineas": [
+    {
+      "descripcion": "Silla de oficina",
+      "cantidad": 2,
+      "precio_unitario": 711.6,
+      "total_linea": 1423.2
+    },
+    {
+      "descripcion": "Tomate (caja)",
+      "cantidad": 1,
+      "precio_unitario": 91.77,
+      "total_linea": 91.77
+    },
+    {
+      "descripcion": "Fertilizante 50 lb",
+      "cantidad": 3,
+      "precio_unitario": 200.11,
+      "total_linea": 600.33
+    },
+    {
+      "descripcion": "Café molido 1 lb",
+      "cantidad": 1,
+      "precio_unitario": 50.82,
+      "total_linea": 50.82
+    },
+    {
+      "descripcion": "Mantenimiento mensual",
+      "cantidad": 1,
+      "precio_unitario": 870.36,
+      "total_linea": 870.36
+    }
+  ],
+  "subtotal": 2711.14,
+  "iva": 325.34,
+  "total": 3036.48,
+  "moneda": "GTQ"
+}

@@ -1,0 +1,22 @@
+{
+  "nit_emisor": "196027K",
+  "nombre_emisor": "Ferretería El Tornillo Feliz, S.A.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-10-15",
+  "serie": "5670F46D",
+  "numero": "154829263",
+  "autorizacion": "4479CCC5-264A-1DB3-4FC7-0A2C6A26B86F",
+  "lineas": [
+    {
+      "descripcion": "Cuaderno universitario",
+      "cantidad": 1,
+      "precio_unitario": 12.98,
+      "total_linea": 12.98
+    }
+  ],
+  "subtotal": 11.59,
+  "iva": 1.39,
+  "total": 12.98,
+  "moneda": "GTQ"
+}

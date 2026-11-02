@@ -1,0 +1,28 @@
+{
+  "nit_emisor": "30911419",
+  "nombre_emisor": "Taller Mecánico Chimaltenango, E.I.R.L.",
+  "nit_receptor": "07536453",
+  "nombre_receptor": "María Sánchez Ajú",
+  "fecha": "2026-07-12",
+  "serie": "92BF2E18",
+  "numero": "855887981",
+  "autorizacion": "06555096-4F1A-8A1D-93D2-0470B766FF10",
+  "lineas": [
+    {
+      "descripcion": "Tomate (caja)",
+      "cantidad": 5,
+      "precio_unitario": 89.71,
+      "total_linea": 448.55
+    },
+    {
+      "descripcion": "Tornillo 1/2 pulg (caja)",
+      "cantidad": 3,
+      "precio_unitario": 36.98,
+      "total_linea": 110.94
+    }
+  ],
+  "subtotal": 499.54,
+  "iva": 59.95,
+  "total": 559.49,
+  "moneda": "GTQ"
+}

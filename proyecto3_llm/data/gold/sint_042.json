@@ -1,0 +1,22 @@
+{
+  "nit_emisor": "9844279",
+  "nombre_emisor": "Verdulería La Esperanza, E.I.R.L.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-09-22",
+  "serie": "C556EEB1",
+  "numero": "571408156",
+  "autorizacion": "CDADAEA8-EF44-8EC6-6CCD-7DDE45EFF3B1",
+  "lineas": [
+    {
+      "descripcion": "Mantenimiento mensual",
+      "cantidad": 3,
+      "precio_unitario": 813.8,
+      "total_linea": 2441.4
+    }
+  ],
+  "subtotal": 2179.82,
+  "iva": 261.58,
+  "total": 2441.4,
+  "moneda": "GTQ"
+}

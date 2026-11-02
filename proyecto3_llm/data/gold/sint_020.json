@@ -1,0 +1,22 @@
+{
+  "nit_emisor": "7085389",
+  "nombre_emisor": "Agroinsumos del Lago, Ltda.",
+  "nit_receptor": "7130066K",
+  "nombre_receptor": "Clínica Dental Sonrisas",
+  "fecha": "2026-02-15",
+  "serie": "13CCD609",
+  "numero": "803921774",
+  "autorizacion": "04D96248-17A8-8DD6-77D6-05E82B3E12CB",
+  "lineas": [
+    {
+      "descripcion": "Paracetamol 500 mg",
+      "cantidad": 2,
+      "precio_unitario": 20.19,
+      "total_linea": 40.38
+    }
+  ],
+  "subtotal": 36.05,
+  "iva": 4.33,
+  "total": 40.38,
+  "moneda": "GTQ"
+}

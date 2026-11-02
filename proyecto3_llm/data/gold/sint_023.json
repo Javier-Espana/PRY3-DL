@@ -1,0 +1,46 @@
+{
+  "nit_emisor": "67094090",
+  "nombre_emisor": "Comercial Xelajú, Ltda.",
+  "nit_receptor": "84638842",
+  "nombre_receptor": "Rosa Tojín Cux",
+  "fecha": "2026-09-17",
+  "serie": "F962A208",
+  "numero": "491063353",
+  "autorizacion": "3E7705C8-CCE3-829C-F1F6-7A20DAA8F7B7",
+  "lineas": [
+    {
+      "descripcion": "Tomate (caja)",
+      "cantidad": 2,
+      "precio_unitario": 94.89,
+      "total_linea": 189.78
+    },
+    {
+      "descripcion": "Fertilizante 50 lb",
+      "cantidad": 3,
+      "precio_unitario": 181.56,
+      "total_linea": 544.68
+    },
+    {
+      "descripcion": "Mantenimiento mensual",
+      "cantidad": 5,
+      "precio_unitario": 877.96,
+      "total_linea": 4389.8
+    },
+    {
+      "descripcion": "Cable UTP cat6 (metro)",
+      "cantidad": 10,
+      "precio_unitario": 6.86,
+      "total_linea": 68.6
+    },
+    {
+      "descripcion": "Cuaderno universitario",
+      "cantidad": 1,
+      "precio_unitario": 13.65,
+      "total_linea": 13.65
+    }
+  ],
+  "subtotal": 4648.67,
+  "iva": 557.84,
+  "total": 5206.51,
+  "moneda": "GTQ"
+}

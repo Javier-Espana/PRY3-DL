@@ -1,0 +1,40 @@
+{
+  "nit_emisor": "6199453",
+  "nombre_emisor": "Papelería La Ceiba, y Cía.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-08-07",
+  "serie": "77E53C0A",
+  "numero": "754550560",
+  "autorizacion": "4A466E1E-75C8-84D7-86FF-C46840724B33",
+  "lineas": [
+    {
+      "descripcion": "Cable UTP cat6 (metro)",
+      "cantidad": 1,
+      "precio_unitario": 7.24,
+      "total_linea": 7.24
+    },
+    {
+      "descripcion": "Pan francés (docena)",
+      "cantidad": 5,
+      "precio_unitario": 18.93,
+      "total_linea": 94.65
+    },
+    {
+      "descripcion": "Servicio de instalación",
+      "cantidad": 2,
+      "precio_unitario": 241.13,
+      "total_linea": 482.26
+    },
+    {
+      "descripcion": "Resma papel carta",
+      "cantidad": 0.5,
+      "precio_unitario": 52.95,
+      "total_linea": 26.48
+    }
+  ],
+  "subtotal": 610.63,
+  "iva": null,
+  "total": 610.63,
+  "moneda": "GTQ"
+}

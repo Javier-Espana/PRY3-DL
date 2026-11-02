@@ -1,0 +1,58 @@
+{
+  "nit_emisor": "6480780",
+  "nombre_emisor": "Librería Pop Wuj, y Cía.",
+  "nit_receptor": "0396222",
+  "nombre_receptor": "Constructora Motagua, S.A.",
+  "fecha": "2026-10-25",
+  "serie": "480F593B",
+  "numero": "107197717",
+  "autorizacion": "84832032-9198-4AA0-C745-B41006A4EBFB",
+  "lineas": [
+    {
+      "descripcion": "Cuaderno universitario",
+      "cantidad": 1,
+      "precio_unitario": 14.21,
+      "total_linea": 14.21
+    },
+    {
+      "descripcion": "Tomate (caja)",
+      "cantidad": 1,
+      "precio_unitario": 83.16,
+      "total_linea": 83.16
+    },
+    {
+      "descripcion": "Mantenimiento mensual",
+      "cantidad": 5,
+      "precio_unitario": 864.94,
+      "total_linea": 4324.7
+    },
+    {
+      "descripcion": "Cable UTP cat6 (metro)",
+      "cantidad": 0.5,
+      "precio_unitario": 7.34,
+      "total_linea": 3.67
+    },
+    {
+      "descripcion": "Impresión banner",
+      "cantidad": 0.5,
+      "precio_unitario": 120.63,
+      "total_linea": 60.31
+    },
+    {
+      "descripcion": "Silla de oficina",
+      "cantidad": 10,
+      "precio_unitario": 722.9,
+      "total_linea": 7229.0
+    },
+    {
+      "descripcion": "Café molido 1 lb",
+      "cantidad": 3,
+      "precio_unitario": 44.31,
+      "total_linea": 132.93
+    }
+  ],
+  "subtotal": 11847.98,
+  "iva": null,
+  "total": 11847.98,
+  "moneda": "GTQ"
+}

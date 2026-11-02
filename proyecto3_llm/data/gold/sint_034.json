@@ -1,0 +1,22 @@
+{
+  "nit_emisor": "6371671",
+  "nombre_emisor": "Distribuidora Los Volcanes, y Cía.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-02-20",
+  "serie": "FF7DA8C1",
+  "numero": "648881535",
+  "autorizacion": "2656685E-C848-11E7-17F4-1019B45590C1",
+  "lineas": [
+    {
+      "descripcion": "Mantenimiento mensual",
+      "cantidad": 2,
+      "precio_unitario": 811.26,
+      "total_linea": 1622.52
+    }
+  ],
+  "subtotal": 1448.68,
+  "iva": 173.84,
+  "total": 1622.52,
+  "moneda": "GTQ"
+}

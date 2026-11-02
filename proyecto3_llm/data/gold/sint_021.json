@@ -1,0 +1,64 @@
+{
+  "nit_emisor": "99924803",
+  "nombre_emisor": "Verdulería La Esperanza, Ltda.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-01-15",
+  "serie": "F553D193",
+  "numero": "639675538",
+  "autorizacion": "1CF65D21-7A65-E4E4-A981-DDF8EEC88DFE",
+  "lineas": [
+    {
+      "descripcion": "Mantenimiento mensual",
+      "cantidad": 1,
+      "precio_unitario": 810.34,
+      "total_linea": 810.34
+    },
+    {
+      "descripcion": "Aceite de motor 1 L",
+      "cantidad": 3,
+      "precio_unitario": 69.18,
+      "total_linea": 207.54
+    },
+    {
+      "descripcion": "Resma papel carta",
+      "cantidad": 10,
+      "precio_unitario": 53.79,
+      "total_linea": 537.9
+    },
+    {
+      "descripcion": "Queso fresco 1 lb",
+      "cantidad": 3,
+      "precio_unitario": 29.9,
+      "total_linea": 89.7
+    },
+    {
+      "descripcion": "Servicio de instalación",
+      "cantidad": 2,
+      "precio_unitario": 257.02,
+      "total_linea": 514.04
+    },
+    {
+      "descripcion": "Silla de oficina",
+      "cantidad": 2,
+      "precio_unitario": 589.32,
+      "total_linea": 1178.64
+    },
+    {
+      "descripcion": "Paracetamol 500 mg",
+      "cantidad": 10,
+      "precio_unitario": 23.05,
+      "total_linea": 230.5
+    },
+    {
+      "descripcion": "Pan francés (docena)",
+      "cantidad": 10,
+      "precio_unitario": 17.34,
+      "total_linea": 173.4
+    }
+  ],
+  "subtotal": 3341.12,
+  "iva": 400.94,
+  "total": 3742.06,
+  "moneda": "GTQ"
+}

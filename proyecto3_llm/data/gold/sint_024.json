@@ -1,0 +1,58 @@
+{
+  "nit_emisor": "1387596",
+  "nombre_emisor": "Farmacia Vida Nueva, E.I.R.L.",
+  "nit_receptor": "1153277",
+  "nombre_receptor": "Colegio Los Pinos",
+  "fecha": "2026-02-20",
+  "serie": "8296CA18",
+  "numero": "167338439",
+  "autorizacion": "72E5E1DE-0FB4-1BD2-7F74-A13571194F23",
+  "lineas": [
+    {
+      "descripcion": "Fertilizante 50 lb",
+      "cantidad": 1,
+      "precio_unitario": 180.37,
+      "total_linea": 180.37
+    },
+    {
+      "descripcion": "Tornillo 1/2 pulg (caja)",
+      "cantidad": 1,
+      "precio_unitario": 34.23,
+      "total_linea": 34.23
+    },
+    {
+      "descripcion": "Servicio de instalación",
+      "cantidad": 2,
+      "precio_unitario": 264.75,
+      "total_linea": 529.5
+    },
+    {
+      "descripcion": "Café molido 1 lb",
+      "cantidad": 10,
+      "precio_unitario": 41.61,
+      "total_linea": 416.1
+    },
+    {
+      "descripcion": "Tomate (caja)",
+      "cantidad": 1,
+      "precio_unitario": 83.33,
+      "total_linea": 83.33
+    },
+    {
+      "descripcion": "Pan francés (docena)",
+      "cantidad": 1,
+      "precio_unitario": 16.64,
+      "total_linea": 16.64
+    },
+    {
+      "descripcion": "Impresión banner",
+      "cantidad": 1,
+      "precio_unitario": 130.85,
+      "total_linea": 130.85
+    }
+  ],
+  "subtotal": 1241.98,
+  "iva": 149.04,
+  "total": 1391.02,
+  "moneda": "GTQ"
+}

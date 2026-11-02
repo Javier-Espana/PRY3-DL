@@ -1,0 +1,52 @@
+{
+  "nit_emisor": "28451422",
+  "nombre_emisor": "Papelería La Ceiba, S.A.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-01-19",
+  "serie": "D76282A9",
+  "numero": "845031138",
+  "autorizacion": "83F713D0-F301-7F88-D744-F400778BCD50",
+  "lineas": [
+    {
+      "descripcion": "Impresión banner",
+      "cantidad": 5,
+      "precio_unitario": 119.05,
+      "total_linea": 595.25
+    },
+    {
+      "descripcion": "Mantenimiento mensual",
+      "cantidad": 1,
+      "precio_unitario": 941.98,
+      "total_linea": 941.98
+    },
+    {
+      "descripcion": "Fertilizante 50 lb",
+      "cantidad": 5,
+      "precio_unitario": 178.14,
+      "total_linea": 890.7
+    },
+    {
+      "descripcion": "Resma papel carta",
+      "cantidad": 3,
+      "precio_unitario": 57.85,
+      "total_linea": 173.55
+    },
+    {
+      "descripcion": "Silla de oficina",
+      "cantidad": 0.5,
+      "precio_unitario": 592.91,
+      "total_linea": 296.45
+    },
+    {
+      "descripcion": "Pan francés (docena)",
+      "cantidad": 3,
+      "precio_unitario": 18.0,
+      "total_linea": 54.0
+    }
+  ],
+  "subtotal": 2635.65,
+  "iva": 316.28,
+  "total": 2951.93,
+  "moneda": "GTQ"
+}

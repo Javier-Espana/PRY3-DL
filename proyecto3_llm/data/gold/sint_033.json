@@ -1,0 +1,22 @@
+{
+  "nit_emisor": "3927334",
+  "nombre_emisor": "Ferretería El Tornillo Feliz, E.I.R.L.",
+  "nit_receptor": "CF",
+  "nombre_receptor": "Consumidor Final",
+  "fecha": "2026-01-20",
+  "serie": "FAA22126",
+  "numero": "551518025",
+  "autorizacion": "DA8255B6-6659-0346-B5EA-AD57F7648652",
+  "lineas": [
+    {
+      "descripcion": "Café molido 1 lb",
+      "cantidad": 3,
+      "precio_unitario": 41.08,
+      "total_linea": 123.24
+    }
+  ],
+  "subtotal": 110.04,
+  "iva": 13.2,
+  "total": 123.24,
+  "moneda": "GTQ"
+}

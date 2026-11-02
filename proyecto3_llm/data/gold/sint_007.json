@@ -1,0 +1,46 @@
+{
+  "nit_emisor": "8012911",
+  "nombre_emisor": "Agroinsumos del Lago, y Cía.",
+  "nit_receptor": "0285943",
+  "nombre_receptor": "Constructora Motagua, S.A.",
+  "fecha": "2026-08-06",
+  "serie": "3F0D0DC2",
+  "numero": "810347522",
+  "autorizacion": "AF0A6148-8A94-A6EF-EF46-3C53B79ECB4E",
+  "lineas": [
+    {
+      "descripcion": "Cable UTP cat6 (metro)",
+      "cantidad": 1,
+      "precio_unitario": 6.31,
+      "total_linea": 6.31
+    },
+    {
+      "descripcion": "Cuaderno universitario",
+      "cantidad": 2,
+      "precio_unitario": 13.61,
+      "total_linea": 27.22
+    },
+    {
+      "descripcion": "Servicio de instalación",
+      "cantidad": 0.5,
+      "precio_unitario": 274.99,
+      "total_linea": 137.5
+    },
+    {
+      "descripcion": "Café molido 1 lb",
+      "cantidad": 1,
+      "precio_unitario": 43.84,
+      "total_linea": 43.84
+    },
+    {
+      "descripcion": "Tomate (caja)",
+      "cantidad": 3,
+      "precio_unitario": 83.28,
+      "total_linea": 249.84
+    }
+  ],
+  "subtotal": 414.92,
+  "iva": 49.79,
+  "total": 464.71,
+  "moneda": "GTQ"
+}

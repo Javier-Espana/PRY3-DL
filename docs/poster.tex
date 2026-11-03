@@ -79,7 +79,7 @@
   \end{minipage}
 }
 \column{0.5}
-\block{Resultados: 45 facturas FEL}{
+\block{Resultados principales: 45 facturas FEL}{
   \begin{center}
   \begin{tikzpicture}[x=1mm,y=1mm]
     \def\w{1.3}
@@ -105,12 +105,13 @@
     \bottomrule
   \end{tabular}
   \end{center}
-  \textbf{Haiku 5.5 fue la mejor relación precisión/costo}: Sonnet cuesta unas 15 veces más sin mejorar el resultado. Costo total de las tres corridas: $\approx$ USD 0,61.
+  \textbf{En el conjunto FEL, Haiku 5.5 fue la mejor relación precisión/costo}: 100\,\% de exactitud a USD 0,00076 por documento. Sonnet costó unas 15 veces más y obtuvo 98,63\,\%. Costo total de las tres corridas: $\approx$ USD 0,61 (prompt v2, 0 reintentos, 2.000 tokens de salida).
 }
 
 \block{Robustez y hallazgos}{
   \begin{itemize}
-    \item \textbf{Fixtures públicas (Haiku):} 83,08\,\% de exactitud y 100\,\% de salidas válidas; los errores vienen de un esquema comercial internacional distinto al FEL.
+    \item \textbf{Prueba secundaria (15 fixtures públicas internacionales):} GPT-4o-mini 72,31\,\%, Haiku 83,08\,\% y Sonnet 91,28\,\% (USD 0,01162 vs. 0,00078 por documento). Sonnet fue mejor allí, a ~15 veces el costo. Son documentos árabes, bilingües, con descuentos y flete; no miden desempeño FEL.
+    \item \textbf{La elección del modelo depende del dominio y del presupuesto:} la recomendación de Haiku es específica del conjunto FEL evaluado.
     \item \textbf{Error de etiquetado hallado y corregido:} 6 facturas sin IVA tenían \texttt{subtotal} en el gold sin que el documento lo mostrara.
     \item \textbf{Compromiso del prompt v2:} ``null si no aparece'' evita inventar, pero deja vacía la moneda cuando solo dice ``Q''.
   \end{itemize}

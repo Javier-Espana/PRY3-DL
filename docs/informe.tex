@@ -127,7 +127,21 @@ Claude Sonnet 5.5 & 98,63\% & 82,22\% & 3,958 s & USD 0,0113 \\
 El costo total de las tres corridas LLM fue aproximadamente USD 0,6084. Haiku fue la mejor relación precisión/costo en este conjunto. Sonnet no justificó su costo adicional.
 
 \subsubsection{Resultados públicos, 15 documentos}
-Haiku obtuvo 83,08\% de exactitud global, 6,67\% de documentos completamente correctos, 100\% de salidas válidas y USD 0,00078 por documento. Las principales diferencias aparecen en nombres, NIT y líneas, porque el dataset usa un esquema comercial internacional distinto al FEL local.
+\begin{table}[ht]
+\centering
+\caption{Comparación sobre el dataset público.}
+\begin{tabular}{lrrrr}
+\toprule
+Sistema & Exactitud & Docs. 100\% & Latencia & Costo/doc. \\
+\midrule
+GPT-4o-mini & 72,31\% & 0\% & 3,657 s & USD 0,00155 \\
+Claude Haiku 5.5 & 83,08\% & 6,67\% & 4,120 s & USD 0,00078 \\
+Claude Sonnet 5.5 & 91,28\% & 33,33\% & 3,601 s & USD 0,01162 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+En este conjunto Sonnet obtuvo el mejor resultado, seguido por Haiku y GPT. Las principales diferencias aparecen en nombres, NIT y líneas, porque el dataset usa un esquema comercial internacional distinto al FEL local. Esto confirma que la ventaja de Haiku en el conjunto FEL no es universal: depende del dominio y de la distribución de los documentos.
 
 \subsection{Experiencia de usuario}
 La aplicación Streamlit ofrece:

@@ -75,7 +75,7 @@ Las corridas actuales están guardadas localmente en `results/` y usan el gold c
 2. **[parcial] Endurecer el conjunto:** se incorporaron 15 fixtures públicas sintéticas con fotos, layouts raros, descuentos, flete, duty y texto bilingüe en `data/public/shopify/`. Falta añadir **10–15 facturas reales anonimizadas**, etiquetarlas a mano con revisión cruzada y anotar quién etiquetó.
 3. **[x] Completar `docs/informe.md`:** informe final con arquitectura, datasets, métricas, costos, limitaciones, conclusiones y comandos reproducibles. La validación con usuarios externos y las capturas siguen siendo trabajo de entrega, no se inventan.
 4. **Prueba de usabilidad** con 2–3 personas ajenas al grupo (sección 2.6), con capturas de pantalla.
-5. **Video demo** de 1–3 min (.mp4) y **material visual** (póster o presentación con diagrama y métricas). Plan B para la feria: respuestas en caché por si falla la red (no implementado).
+5. **Material visual:** [parcial] el contenido base y la justificación metodológica del póster están en `docs/poster.md`. Falta maquetarlo visualmente y añadir el enlace/QR del repositorio. También falta el video demo de 1–3 min (.mp4) y el plan B de respuestas en caché.
 6. **Verificar supuestos escritos de memoria**, hoy sin comprobar con datos reales:
    - Algoritmo del dígito verificador del NIT (`src/validators.py`).
    - Nombres de campos de la factura FEL (`src/schema.py`).

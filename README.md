@@ -63,7 +63,7 @@ Se incorporó `data/public/shopify/` desde [Synthetic Shopify Invoice Test Pack]
 - Casos de multipágina, árabe, bilingüe, descuentos, flete, duty, mala calidad y tablas densas.
 
 La importación reproducible está en `scripts/import_shopify_dataset.py`. Este conjunto se evalúa separado de las 45 facturas sintéticas FEL y sus campos no equivalentes quedan en `null`.
-En la prueba actual, Haiku obtuvo 83,08 % de exactitud global y `$0,00078` por documento.
+En la prueba pública actual: GPT obtuvo 72,31 %, Haiku 83,08 % y Sonnet 91,28 % de exactitud global. Sonnet logró 33,33 % de documentos completos; Haiku 6,67 % y GPT 0 %. El costo por documento fue `$0,00155`, `$0,00078` y `$0,01162`, respectivamente.
 
 ```bash
 .venv/bin/python -m src.evaluate --system regex \
@@ -98,6 +98,7 @@ correctos, latencia, tokens y costo. Esas corridas son la tabla de iteraciones d
 - `docs/informe.tex`: fuente LaTeX autoritativa del informe final.
 - `docs/informe.md`: copia legible del contenido del informe.
 - `docs/informe.pdf`: PDF generado localmente; recompilar desde LaTeX antes de entregar.
+- `docs/poster.md`: texto base, justificación y orden visual sugerido para el póster.
 
 ## Notas técnicas
 

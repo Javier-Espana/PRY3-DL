@@ -11,7 +11,7 @@ Este conjunto se mantiene separado de `data/docs` y no se mezcla con la métrica
 facturas FEL sintéticas. Algunas fixtures incluyen descuentos, flete o duty; los validadores
 pueden marcarlas para revisión porque el esquema FEL actual no modela esos conceptos.
 
-Corrida Haiku 5.5 (`--retries 0`): 83,08 % de exactitud global, 6,67 % de documentos completos, `$0,00078` por documento.
+Corridas actuales (`--retries 0`): GPT 72,31 % / 0 % completos / `$0,00155` por documento; Haiku 83,08 % / 6,67 % / `$0,00078`; Sonnet 91,28 % / 33,33 % / `$0,01162`.
 
 Baseline reproducible:
 `.venv/bin/python -m src.evaluate --system regex --docs data/public/shopify/docs --gold data/public/shopify/gold --run-name public_shopify`

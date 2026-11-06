@@ -6,6 +6,7 @@
 \usepackage[spanish,es-nodecimaldot]{babel}
 \usepackage[a4paper,margin=2.2cm]{geometry}
 \usepackage{booktabs}
+\usepackage{graphicx}
 \usepackage{array}
 \usepackage{longtable}
 \usepackage{enumitem}
@@ -27,8 +28,8 @@
 }
 
 \title{Extractor de facturas FEL con LLM}
-\author{CC3092 Deep Learning y Sistemas Inteligentes}
-\date{Proyecto 3 -- 2 de noviembre de 2026}
+\author{Angel Esteban Esquit Hernández \and Javier Eduardo España Pacheco\\CC3092 Deep Learning y Sistemas Inteligentes}
+\date{Proyecto 3 -- Entrega: 6 de noviembre de 2026}
 
 \begin{document}
 \maketitle
@@ -155,7 +156,44 @@ La aplicación Streamlit ofrece:
   \item Latencia, tokens, costo estimado e intentos visibles.
 \end{itemize}
 
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{img/Captura1.png}
+\caption{Pantalla inicial: selector de modelo, aviso de privacidad y carga de la factura (PDF, PNG, JPG o WEBP).}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{img/Captura2.png}
+\caption{Factura cargada y resultado: datos generales extraídos, control de calidad (``Validación correcta''), latencia y costo estimado.}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=\linewidth]{img/Captura3.png}
+\caption{Resto del resultado: líneas de factura, tokens e intentos, y botones para exportar JSON y CSV. El campo \texttt{subtotal} aparece como \texttt{None} porque el documento no lo muestra.}
+\end{figure}
+
+La latencia de la Figura 2 (53,8 s) es una sola medición de la interfaz y es mucho mayor que el promedio de 3,96 s de Sonnet en la evaluación por lotes; puede deberse a la primera llamada o a la red, y no se tomó como representativa.
+
 La interfaz no debe usarse como aprobación automática: el resultado siempre requiere revisión cuando hay advertencias o cuando el documento contiene conceptos que el esquema no modela, como descuentos, flete o duty.
+
+\subsubsection{Prueba de usabilidad}
+Se pidió a personas ajenas al grupo, sin ayuda, que (1) subieran una factura y obtuvieran el JSON o CSV, (2) identificaran qué campo quedó marcado para revisión y por qué, y (3) corrigieran un valor. Se registró si completaron cada tarea, el tiempo, dónde dudaron, una calificación de facilidad de 1 a 5 y un comentario.
+
+\begin{table}[ht]
+\centering
+\caption{Resultados de la prueba de usabilidad (completar con datos observados).}
+\begin{tabular}{lcccccc}
+\toprule
+Tester & Tarea 1 & Tarea 2 & Tarea 3 & Tiempo & Facilidad (1--5) & Comentario \\
+\midrule
+ &  &  &  &  &  &  \\
+ &  &  &  &  &  &  \\
+ &  &  &  &  &  &  \\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \subsection{Riesgos, privacidad y limitaciones}
 Los documentos se envían al proveedor correspondiente al modelo seleccionado. No se deben subir facturas que no puedan compartirse con OpenAI o Anthropic. Las claves viven únicamente en \texttt{.env}, excluido de Git.
@@ -169,7 +207,9 @@ El producto es funcional y reproducible para demostración y evaluación control
 
 El siguiente trabajo es añadir facturas reales anonimizadas con permiso, revisión cruzada de sus gold, prueba de usabilidad con usuarios externos, capturas, video de demostración y validación formal de supuestos tributarios. Esos elementos no se deben inventar a partir de datasets sintéticos.
 
-\subsection{Reproducibilidad}
+\subsection{Reproducibilidad y repositorio}
+Repositorio de GitHub: \url{https://github.com/Javier-Espana/PRY3-DL}
+
 \begin{lstlisting}[language=bash]
 python3 -m venv .venv
 .venv/bin/python -m pip install -r requirements.txt

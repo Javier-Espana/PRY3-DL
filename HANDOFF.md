@@ -32,7 +32,7 @@ src/evaluate.py      evalúa contra data/gold y escribe results/<corrida>.json
 src/app.py           app Streamlit
 scripts/make_synthetic.py  genera facturas sintéticas + gold
 prompts/system_v1.txt (mínimo)  system_v2.txt (reglas, nulos, anti prompt-injection)
-docs/informe.md      informe final del trabajo escrito (secciones 2.1–2.9 del enunciado)
+docs/informe.tex     informe final del trabajo escrito (secciones 2.1–2.9 del enunciado); PDF en docs/informe.pdf
 ```
 
 ## 3. Cómo ejecutar
@@ -73,7 +73,7 @@ Las corridas actuales están guardadas localmente en `results/` y usan el gold c
 
 1. **[x] Arreglar el gold:** las facturas sin IVA ahora tienen `subtotal: null` en `crear_caso`; se regeneraron los 45 casos con la semilla 2026. **Declararlo en el informe** como un error de etiquetado hallado tras ver resultados, no como un ajuste a favor de un modelo. Las tres corridas actuales ya fueron ejecutadas.
 2. **[parcial] Endurecer el conjunto:** se incorporaron 15 fixtures públicas sintéticas con fotos, layouts raros, descuentos, flete, duty y texto bilingüe en `data/public/shopify/`. Falta añadir **10–15 facturas reales anonimizadas**, etiquetarlas a mano con revisión cruzada y anotar quién etiquetó.
-3. **[x] Completar `docs/informe.md`:** informe final con arquitectura, datasets, métricas, costos, limitaciones, conclusiones y comandos reproducibles. La validación con usuarios externos y las capturas siguen siendo trabajo de entrega, no se inventan.
+3. **[x] Completar `docs/informe.tex`:** informe final con arquitectura, datasets, métricas, costos, limitaciones, conclusiones y comandos reproducibles. La validación con usuarios externos y las capturas siguen siendo trabajo de entrega, no se inventan.
 4. **Prueba de usabilidad** con 2–3 personas ajenas al grupo (sección 2.6), con capturas de pantalla.
 5. **Material visual:** [parcial] el contenido base y la justificación metodológica del póster están en `docs/poster.md`. Falta maquetarlo visualmente y añadir el enlace/QR del repositorio. También falta el video demo de 1–3 min (.mp4) y el plan B de respuestas en caché.
 6. **Verificar supuestos escritos de memoria**, hoy sin comprobar con datos reales:

@@ -96,7 +96,6 @@ correctos, latencia, tokens y costo. Esas corridas son la tabla de iteraciones d
 - `scripts/make_synthetic.py`: generación FEL reproducible.
 - `scripts/import_shopify_dataset.py`: importación del dataset público.
 - `docs/informe.tex`: fuente LaTeX autoritativa del informe final.
-- `docs/informe.md`: copia legible del contenido del informe.
 - `docs/informe.pdf`: PDF generado localmente; recompilar desde LaTeX antes de entregar.
 - `docs/poster.md`: texto base, justificación y orden visual sugerido para el póster.
 
